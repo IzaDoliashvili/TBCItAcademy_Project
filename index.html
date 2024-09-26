@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/footer.css">
+    <script
+      src="https://kit.fontawesome.com/56f0f4a877.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="https://free.bboxtype.com/embedfonts/?family=FiraGO:400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="./css/basket.css">
+    <link rel="stylesheet" href="./css/registration.css">
+    <title>Super App Project</title>
+  </head>
+  <body>
+    <div class="shadow"></div>
+    <!-- izas part starts -->
+    <header>
+      <div class="center-div">
+          <div class="center-div-top">
+              <div class="logo">
+                <a href="index.html">
+                  <img src="Image/ShopEasy.png" alt="">
+                </a>  
+              </div>
+              <div class="search">
+                  <input type="text" placeholder="ძიება">
+                  <img src="Image/Icon Right.png" alt="">
+              </div>
+              <div class="center-div-top-buttons">
+                  <div class="center-div-top-buttons-icons">
+                    <div  id="basket-icon"                                                                                                                                                                                                      >
+                      <img src="./Image/icon-shopping-cart.png" alt="">
+                      <div class="red-dot"></div>
+                    </div>
+                     
+                  </div>
+                  <div class="center-div-top-buttons-icons">
+                    <a href="">
+                      <img src="./Image/Frame 1.png" alt="">
+                    </a>
+                      
+                  </div>
+                  <div class="center-div-top-buttons-login">
+                    <button id="loginButton">შესვლა</button>
+                  </div>
+                  
+              </div>
+              <div class="hidden-button">
+                  <a href="javascript:void(0)">
+                      <img src="./Image/icon-align-justify.png" alt="Menu">
+                  </a>
+              </div>
+              <div class="menu-container" id="menuContainer">
+                  <div class="menu-header">
+                      <!-- <span>Menu</span> -->
+                      <button id="closeButton">&times;</button>
+                  </div>
+                  <ul id="menuList"></ul>
+              </div>
+         </div>
+         <div class="center-div-lower">
+          <div class="center-div-lower-main">
+              <div class="burger-menu" id="burger-menu">
+                  <div>
+                      <img src="./Image/icon-align-justify.png" alt="">
+                  </div>
+                  <span>ყველა კატეგორია</span>
+              </div>
+              <div class="carousel-wrap">
+                  <div class="carousel" id="carousel">
+                      <div class="carousel-slide" >
+                          <div class="carousel-item"><a href="">ფასდაკლება</a></div>
+                          <div class="carousel-item"><a href="">ტექნიკა</a></div>
+                          <div class="carousel-item"><a href="./html/baby-care.html">ბავშვის მოვლა</a></div>
+                          <div class="carousel-item"><a href="">სახლი & მოვლა</a></div>
+                          <div class="carousel-item"><a href="">თავის მოვლა</a></div>
+                          <div class="carousel-item"><a href="">სათამაშოები</a></div>
+                          <div class="carousel-item"><a href="">ფიტნესი</a></div>
+                      </div>
+                      <div class="carousel-slide" >
+                          <div class="carousel-item"><a href="">ბარი & სხვა</a></div>
+                          <div class="carousel-item" id="xx"><a href="">წვეულება</a></div>
+                          <div class="carousel-item"><a href="">წიგნები</a></div>
+                          <div class="carousel-item"><a href="">ცხოველების მოვლა</a></div>
+                          <div class="carousel-item"><a href="">დასვენება & მოგზაურობა</a></div>
+                          <div class="carousel-item"><a href="">ჯანმრთელობა</a></div>
+                          <div class="carousel-item" id="xx"><a href="">ეზოს მოვლა</a></div>
+                      </div>
+                  </div>
+                  <button class="carousel-nav prev" onclick="prevSlide()">&#10094;</button>
+                  <button class="carousel-nav next" onclick="nextSlide()">&#10095;</button>
+              </div>
+              
+          </div>
+      </div> 
+  </header>
+  <div class="category-section" id="category-section">
+      <div class="cancel-icon"><img src="Image/icon-x.png" alt=""></div>
+  <div class="scrollable-content">
+      
+  </div>
+  </div>
+  <div class="overlay" id="overlay"></div>
+
+  <div class="authorization-container" id="authorization-form-container">
+    <div class="authorization-container-center">
+    <h2>გაიარეთ ავტორიზაცია</h2>
+        <div class="cancel-icon"><img src="Image/icon-x.png" alt=""></div>
+    
+    
+    <div class="tabs">
+        <button class="tab active" id="authTab">ავტორიზაცია</button>
+        <button class="tab" id="regTab">რეგისტრაცია</button>
+    </div>
+
+    <form id="authorization-form">
+        <div class="form-group">
+            <input type="text" id="email-username" name="email-username" placeholder="მეილი / ტელ.ნომერი" required>
+        </div>
+        <div class="form-group">
+            <input type="password" id="password" name="password" placeholder="პაროლი" required>
+            <i class="toggle-password" id="togglePassword"></i>
+        </div>
+        <div class="form-footer">
+            <a href="#" class="forgot-password">დაგავიწყდა პაროლი?</a>
+            <button type="submit">შესვლა</button>
+        </div>
+    </form>
+
+    <div class="divider">
+        <hr>
+        <span>ან</span>
+        <hr>
+    </div>
+
+    <div class="social-login">
+        <a class="social-btn facebook-btn"><img src="Image/reg-image/image 1.png" alt="">
+            Facebook-ით შესვლა</a>
+        <a class="social-btn google-btn"><img src="Image/reg-image/image 2.png" alt="">
+            Google-ით შესვლა</a>
+    </div>
+</div>
+</div>
+<div class="registration-container" id="registration-form-container">
+    <div class="registration-container-center">
+    <h2>გაიარე რეგისტრაცია</h2>
+    <div class="cancel-icon"><img src="Image/icon-x.png" alt=""></div>
+    <div class="tabs">
+        <button class="tab " id="authTab">ავტორიზაცია</button>
+        <button class="tab active" id="regTab">რეგისტრაცია</button>
+    </div>
+    <form id="registration-form">
+        <div class="form-group">
+            <input type="text" id="fullname" name="fullname" placeholder="სახელი, გვარი" required>
+        </div>
+        <div class="form-group">
+            <input type="email" id="email" name="email"placeholder="მეილი" required>
+            <div id="email-error" class="error-message"></div>
+
+        </div>
+        <div class="form-group">
+            <input type="text" id="username" name="username" placeholder="ტელეფონის ნომერი" required>
+        </div>
+        <div id="pass-confirm">
+        <div class="form-group" >
+            <input type="password" id="regPassword" name="password" placeholder="პაროლი" required>
+            <div id="password-error" class="error-message"></div>
+        </div>
+        <div class="form-group">
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="გაიმეორე პაროლი" required>
+            <div id="confirm-password-error" class="error-message"></div>
+        </div>
+        </div>
+        <div class="form-group">
+            <span>რეგისტრაციის ღილაკზე დაჭერით ეთანხმებით <a href="">წესებს და პირობებს</a></span>
+        </div>
+        <button type="submit">რეგისტრაცია</button>
+    </form>
+</div>
+</div>
+  <section class="sale-slider">
+      <div class="sale-slider-center1 slide">
+          <div class="sale-slider-center-left">
+                  <div>
+                      <h1>შექმენით უნიკალური ნამუშევრები</h1>
+                  </div>
+                  <div>
+                      <h4>შეიძინეთ თიხით ძერწვისთვის საჭირო მასალა</h4>
+                  </div>
+                  <div class="slider-Icon">
+                      <a href="">დაიწყე შოპინგი</a>
+                      <img src="Image/slider-Icon Right.png" alt="">
+                  </div>
+              
+          </div>
+      </div>
+      <div class="sale-slider-center2 slide">
+          <div class="sale-slider-center-left">
+              <div class="sale-slider-center-left-main">
+                  <div>
+                      <h1>დაზოგე 80%-მდე საზაფხულო ასორტიმენტზე</h1>
+                  </div>
+                  <div>
+                      <h4>შეიძინე ყველაფერი შენი სახლისთვის, საუკეთესო <br>ფასად</h4>
+                  </div>
+                  <div class="slider-Icon">
+                      <a href="">სრულად სანახავად</a>
+                      <img src="Image/slider-Icon Right.png" alt="">
+                  </div>
+              </div>
+          </div>
+          <div class="sale-slider-center-right">
+              <img src="Image/sale-slider-image2.png" alt="">
+          </div>
+      </div>
+      <div class="sale-slider-center3 slide">
+          <div class="sale-slider-center-left">
+               <div>
+                   <h1>ყველაფერი თქვენი ოთახის ყვავილებისთვის</h1>
+              </div>
+              <div>
+                  <h4>იზრუნეთ მათზე სიყვარულით</h4>
+              </div>
+          </div>
+          
+      </div>
+      <div class="senter-buttons">
+      <button class="sale-slider-button prev" onclick="plusSlides(-1)">&#10094;</button>
+      <button class="sale-slider-button next" onclick="plusSlides(1)">&#10095;</button>
+      </div>
+      <div class="sale-slider-dot">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+  </section>
+ 
+
+    <!-- izas part ends -->
+     <div id="cart">
+        <div class="top-cart">
+          <p>კალათა</p>
+          <div id="x">x</div>
+        </div>
+        <div class="mid-cart" >
+      
+        </div>
+        <div class="bott-cart">
+          <p id="whole-price"></p>
+           <button id="buy-btn">ყიდვა</button> 
+        </div>
+     </div>
+   
+   
+    <!-- ყველაზე მოთხოვნადი პროდუქცია -->
+    <section class="popular-products-sect">
+      <div class="centered-div">
+      <div class="popular-products-title-div">
+        <h2  class="title">ყველაზე მოთხოვნადი პროდუქცია</h2>
+        <div class="turn-products-div">
+          <span>სრულად</span>
+         <div> <button class="left-btn" id="first-left">
+          <i class="fa-solid fa-less-than"></i>
+        </button>
+        <button class="right-btn" id="first-right">
+          <i class="fa-solid fa-greater-than"></i>
+        </button></div>
+        </div>
+      </div>
+      <div class="popular-products-slider">
+      <div class="all-popular-products" id="first-products">
+        <div class="popular-products-main-div">
+          <div class="popular-products-div1">
+            <!-- შეფასების ვარსკვლავის და ფოტოს დივი -->
+            <div > 
+              <div class="popular-product-photo popular-product-photo1">
+             
+                <div class="heart-icon-div">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              
+              <div class="star-box"><img src="../Super-App-Project-3rd-Team/photos/Star 2.png" alt=""> <span> 5.0</span></div>
+
+            </div>
+           
+          </div>
+          <h2>Esthederm</h2>
+          <h3>ესტედერმი გასარუჯი ზეთი</h3>
+
+          <div class="evaluate-star-icon">
+            <span class="discount">78.50 ₾ </span>
+            <span class="prise-line-through">157.00 ₾</span>
+            <div class="percentage-box">50%</div>
+          </div>
+          <button class="add-to-basket-btn">კალათში დამატება</button>
+        </div>
+        <div class="popular-products-main-div">
+          <div class="popular-products-div1">
+            <div > 
+              <div class="popular-product-photo popular-product-photo2">
+             
+                <div class="heart-icon-div">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              
+              <div class="star-box"><img src="../Super-App-Project-3rd-Team/photos/Star 2.png" alt=""> <span> 5.0</span></div>
+
+            </div>
+           
+          </div>
+          <h2>SeaGrass</h2>
+          <h3>სანაპიროს ჩანთა</h3>
+          <div class="evaluate-star-icon">
+            <span class="discount">89.00 ₾ </span>
+          </div>
+          <button class="add-to-basket-btn">კალათში დამატება</button>
+        </div>
+        <div class="popular-products-main-div">
+          <div class="popular-products-div1">
+            <div > 
+              <div class="popular-product-photo popular-product-photo3">
+             
+                <div class="heart-icon-div">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              
+              <div class="star-box"><img src="../Super-App-Project-3rd-Team/photos/Star 2.png" alt=""> <span> 5.0</span></div>
+
+            </div>
+        
+          </div>
+
+          <h2>IZIPIZI  </h2>
+          <h3>სათვალე</h3>
+          <div class="evaluate-star-icon">
+            <span class="discount">120.00 ₾</span>
+          </div>
+          <button class="add-to-basket-btn">კალათში დამატება</button>
+        </div>
+        <div class="popular-products-main-div">
+          <div class="popular-products-div1">
+            <div > 
+              <div class="popular-product-photo popular-product-photo4">
+             
+                <div class="heart-icon-div">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              
+              <div class="star-box"><img src="../Super-App-Project-3rd-Team/photos/Star 2.png" alt=""> <span> 5.0</span></div>
+
+            </div>
+          </div>
+          <h2>Apple AirPods Wireless</h2>
+          <h3>ყურსასმენები</h3>
+          <div class="evaluate-star-icon">
+            <span class="discount">1989.00 ₾ </span>
+          </div>
+          <button class="add-to-basket-btn">კალათში დამატება</button>
+        </div>
+        <div class="popular-products-main-div">
+          <div class="popular-products-div1">
+            <div > 
+              <div class="popular-product-photo popular-product-photo1">
+             
+                <div class="heart-icon-div">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              
+              <div class="star-box"><img src="../Super-App-Project-3rd-Team/photos/Star 2.png" alt=""> <span> 5.0</span></div>
+
+            </div>
+            
+          </div>
+          <h2>Esthederm</h2>
+          <h3>ესტედერმი გასარუჯი ზეთი</h3>
+
+          <div class="evaluate-star-icon">
+            <span class="discount">78.50 ₾ </span>
+            <span class="prise-line-through">157.00 ₾</span>
+            <div class="percentage-box">50%</div>
+          </div>
+          <button class="add-to-basket-btn">კალათში დამატება</button>
+        </div>
+        <div class="popular-products-main-div">
+          <div class="popular-products-div1">
+            <div > 
+              <div class="popular-product-photo popular-product-photo2">
+             
+                <div class="heart-icon-div">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              
+              <div class="star-box"><img src="../Super-App-Project-3rd-Team/photos/Star 2.png" alt=""> <span> 5.0</span></div>
+
+            </div>
+           
+          </div>
+          <h2>SeaGrass</h2>
+          <h3>სანაპიროს ჩანთა</h3>
+          <div class="evaluate-star-icon">
+            <span class="discount">89.00 ₾ </span>
+          </div>
+          <button class="add-to-basket-btn">კალათში დამატება</button>
+        </div>
+        <div class="popular-products-main-div">
+          <div class="popular-products-div1">
+            <div > 
+              <div class="popular-product-photo popular-product-photo3">
+             
+                <div class="heart-icon-div">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              
+              <div class="star-box"><img src="../Super-App-Project-3rd-Team/photos/Star 2.png" alt=""> <span> 5.0</span></div>
+
+            </div>
+          
+          </div>
+
+          <h2>IZIPIZI  </h2>
+          <h3>სათვალე</h3>
+          <div class="evaluate-star-icon">
+            <span class="discount">120.00 ₾</span>
+          </div>
+          <button class="add-to-basket-btn">კალათში დამატება</button>
+        </div>
+        <div class="popular-products-main-div">
+          <div class="popular-products-div1">
+            <div > 
+              <div class="popular-product-photo popular-product-photo4">
+             
+                <div class="heart-icon-div">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              
+              <div class="star-box"><img src="../Super-App-Project-3rd-Team/photos/Star 2.png" alt=""> <span> 5.0</span></div>
+
+            </div>
+            
+          </div>
+          <h2>Apple AirPods Wireless</h2>
+          <h3>ყურსასმენები</h3>
+          <div class="evaluate-star-icon">
+            <span class="discount">1989.00 ₾ </span>
+          </div>
+          <button class="add-to-basket-btn">კალათში დამატება</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    </section>
+
+ <!-- salome's sectiom -->
+    <!-- pool section -->
+    <!-- <div id="pool_section">
+     
+      </div> -->
+          <!-- salome's sectiom -->
+    <!-- pools section -->
+
+    <section id="pool_section" class="pool">
+      <div class="pool-section">
+        <div id="auzisasrialo" class="product-card-pool auzisasrialo">
+          <img class="picture-pool" src="img/auzisasrialo.png" alt="გასაბერი აუზი" />
+          <div class="product-info">
+            <p>გასაბერი აუზი</p>
+            <button class="arrow-button">
+              <img src="img/Button.png" alt="Arrow" />
+            </button>
+          </div>
+        </div>
+    
+        <div id="auzi" class="product-card-pool auzi">
+          <img class="picture-pool" src="img/auzi.png" alt="კარკასული აუზი" />
+          <div class="product-info">
+            <p>კარკასული აუზი</p>
+            <button class="arrow-button">
+              <img src="img/Button.png" alt="Arrow" />
+            </button>
+          </div>
+        </div>
+    
+        <div id="ixvi" class="product-card-pool ixvi">
+          <img class="picture-pool" src="img/ixvi.png" alt="აუზის აქსესუარები" />
+          <div class="product-info">
+            <p>აუზის აქსესუარები</p>
+            <button class="arrow-button btnixvi">
+              <img src="img/Button.png" alt="Arrow" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- end salome's sectiom -->
+    <!-- salome's sectiom -->
+    <!--end  salome's sectiom -->
+
+    <!-- მხოლოდ ჩვენთან -->
+    <section class="only-with-us">
+      <div class="centered-div">
+      <div class="popular-products-title-div">
+        <h2 class="title">მხოლოდ ჩვენთან</h2>
+        <div class="turn-products-div">
+          <span>სრულად</span>
+         <div> <button class="left-btn" id="second-left" >
+          <i class="fa-solid fa-less-than"></i>
+        </button>
+        <button class="right-btn" id="second-right" >
+          <i class="fa-solid fa-greater-than"></i>
+        </button></div>
+        </div>
+      </div>
+      <div class="popular-products-slider">
+      <div class="all-popular-products" id="second-products">
+        <div class="popular-products-main-div">
+          <div class="popular-products-div1">
+            <div > 
+              <div class="popular-product-photo popular-product-photo5">
+             
+                <div class="heart-icon-div">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              
+              <div class="star-box"><img src="../Super-App-Project-3rd-Team/photos/Star 2.png" alt=""> <span> 5.0</span></div>
+
+            </div>
+          </div>
+          <h2>STANLEY 1913</h2>
+          <h3>THE QUENCHER -TUMBLER 1,2 L</h3>
+          <div class="evaluate-star-icon">
+            <span class="discount">140 ₾ </span>
+          </div>
+          <button class="add-to-basket-btn">კალათში დამატება</button>
+        </div>
+        <div class="popular-products-main-div">
+          <div class="popular-products-div1">
+            <div > 
+              <div class="popular-product-photo popular-product-photo6">
+             
+                <div class="heart-icon-div">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              
+              <div class="star-box"><img src="../Super-App-Project-3rd-Team/photos/Star 2.png" alt=""> <span> 5.0</span></div>
+
+            </div>
+          </div>
+          <h2>Fridababy თერმომეტრი</h2>
+          <h3>3-in-1 Ear, Forehead + Touchless</h3>
+          <div class="evaluate-star-icon">
+            <span class="discount">89.00 ₾ </span>
+          </div>
+          <button class="add-to-basket-btn">კალათში დამატება</button>
+        </div>
+        <div class="popular-products-main-div">
+          <div class="popular-products-div1">
+            <div > 
+              <div class="popular-product-photo popular-product-photo7">
+             
+                <div class="heart-icon-div">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              
+              <div class="star-box"><img src="../Super-App-Project-3rd-Team/photos/Star 2.png" alt=""> <span> 5.0</span></div>
+
+            </div>
+          </div>
+          <h2>Kindle Paperwhite</h2>
+          <h3>ქინდლი</h3>
+          <div class="evaluate-star-icon">
+            <span class="discount">450.00 ₾</span>
+          </div>
+          <button class="add-to-basket-btn">კალათში დამატება</button>
+        </div>
+        <div class="popular-products-main-div">
+          <div class="popular-products-div1">
+            <div > 
+              <div class="popular-product-photo popular-product-photo8">
+             
+                <div class="heart-icon-div">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              
+              <div class="star-box"><img src="../Super-App-Project-3rd-Team/photos/Star 2.png" alt=""> <span> 5.0</span></div>
+
+            </div>
+            
+          </div>
+          <h2>Ninja CREAMi</h2>
+          <h3>Ninja NC301 CREAMi Ice Cream Maker</h3>
+          <div class="evaluate-star-icon">
+            <span class="discount">600.00 ₾</span>
+          </div>
+          <button class="add-to-basket-btn">კალათში დამატება</button>
+        </div>
+        <div class="popular-products-main-div">
+          <div class="popular-products-div1">
+            <div > 
+              <div class="popular-product-photo popular-product-photo5">
+             
+                <div class="heart-icon-div">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              
+              <div class="star-box"><img src="../Super-App-Project-3rd-Team/photos/Star 2.png" alt=""> <span> 5.0</span></div>
+
+            </div>
+          </div>
+          <h2>STANLEY 1913</h2>
+          <h3>THE QUENCHER -TUMBLER 1,2 L</h3>
+          <div class="evaluate-star-icon">
+            <span class="discount">140 ₾ </span>
+          </div>
+          <button class="add-to-basket-btn">კალათში დამატება</button>
+        </div>
+        <div class="popular-products-main-div">
+          <div class="popular-products-div1">
+            <div > 
+              <div class="popular-product-photo popular-product-photo6">
+             
+                <div class="heart-icon-div">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              
+              <div class="star-box"><img src="../Super-App-Project-3rd-Team/photos/Star 2.png" alt=""> <span> 5.0</span></div>
+
+            </div>
+          </div>
+          <h2>Fridababy თერმომეტრი</h2>
+          <h3>3-in-1 Ear, Forehead + Touchless</h3>
+          <div class="evaluate-star-icon">
+            <span class="discount">89.00 ₾ </span>
+          </div>
+          <button class="add-to-basket-btn">კალათში დამატება</button>
+        </div>
+        <div class="popular-products-main-div">
+          <div class="popular-products-div1">
+            <div > 
+              <div class="popular-product-photo popular-product-photo7">
+             
+                <div class="heart-icon-div">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              
+              <div class="star-box"><img src="../Super-App-Project-3rd-Team/photos/Star 2.png" alt=""> <span> 5.0</span></div>
+
+            </div>
+          </div>
+          <h2>Kindle Paperwhite</h2>
+          <h3>ქინდლი</h3>
+          <div class="evaluate-star-icon">
+            <span class="discount">450.00 ₾</span>
+          </div>
+          <button class="add-to-basket-btn">კალათში დამატება</button>
+        </div>
+        <div class="popular-products-main-div">
+          <div class="popular-products-div1">
+            <div > 
+              <div class="popular-product-photo popular-product-photo8">
+             
+                <div class="heart-icon-div">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              
+              <div class="star-box"><img src="../Super-App-Project-3rd-Team/photos/Star 2.png" alt=""> <span> 5.0</span></div>
+
+            </div>
+          
+          </div>
+          <h2>Ninja CREAMi</h2>
+          <h3>Ninja NC301 CREAMi Ice Cream Maker</h3>
+          <div class="evaluate-star-icon">
+            <span class="discount">600.00 ₾</span>
+          </div>
+          <button class="add-to-basket-btn">კალათში დამატება</button>
+        </div>
+      </div>
+      </div>
+    </div>
+    </section>
+
+    <!-- salomes section -->
+   
+    <!--  start  popular brends section  -->
+    <section id="popularbrend" class="popularbrend">
+      <div class="popular_brends">
+        <h4 class="popular_brens_title">პოპულარული ბრენდები</h4>
+        <div class="flex-container popular">
+          <div class="flex-item hape">
+            <img class="hape_img" src="img/hape.png" alt="Hape" />
+            <div class="label product-info hape_mob">
+              <p>Hape</p>
+              <button class="arrow-button arrowpop">
+                <img src="img/Button.png" alt="Arrow" />
+              </button>
+            </div>
+          </div>
+          <div class="double_section">
+            <div class="flex-item dyson">
+              <img src="img/dyson.png" alt="Dyson" />
+              <div class="label product-info">
+                <p>Dyson</p>
+                <button class="arrow-button arrowpop">
+                  <img src="./img/Button.png" alt="Arrow" />
+                </button>
+              </div>
+            </div>
+            <div class="flex-item greenpan">
+              <img src="img/greenpan.png" alt="GreenPan" />
+              <div class="label product-info">
+                <p>GreenPan</p>
+                <button class="arrow-button arrowpop">
+                  <img src="img/Button.png" alt="Arrow" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      <!-- end salomes section -->
+       <!-- end popular section -->
+
+
+
+    <!-- ყველაფერი შენი სახლისთვის -->
+
+    <section class="everything-fy">
+      <div class="centered-div">
+      <div class="popular-products-title-div">
+        <h2 class="title">ყველაფერი შენი სახლისთვის</h2>
+        <div class="turn-products-div">
+          <span>სრულად</span>
+          <div><button class="left-btn" id="third-left">
+            <i class="fa-solid fa-less-than"></i>
+          </button>
+          <button class="right-btn" id="third-right">
+            <i class="fa-solid fa-greater-than"></i>
+          </button></div>
+        </div>
+      </div>
+      <div class="popular-products-slider">
+      <div class="all-popular-products" id="third-products">
+        <div class="popular-products-main-div">
+          <div class="popular-products-div1">
+            <div > 
+              <div class="popular-product-photo popular-product-photo9">
+             
+                <div class="heart-icon-div">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              
+              <div class="star-box"><img src="../Super-App-Project-3rd-Team/photos/Star 2.png" alt=""> <span> 5.0</span></div>
+
+            </div>
+           
+          </div>
+
+          <h2>Oslo Wooden Armchair</h2>
+          <h3>ეზოს სავარძელი</h3>
+          <div class="evaluate-star-icon">
+            <span class="discount">250.00 ₾</span>
+          </div>
+          <button class="add-to-basket-btn">კალათში დამატება</button>
+        </div>
+        <div class="popular-products-main-div">
+          <div class="popular-products-div1">
+            <div > 
+              <div class="popular-product-photo popular-product-photo10">
+             
+                <div class="heart-icon-div">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              
+              <div class="star-box"><img src="../Super-App-Project-3rd-Team/photos/Star 2.png" alt=""> <span> 5.0</span></div>
+
+            </div>
+          
+          </div>
+          <h2>Knotted Rope LED Lamp</h2>
+          <h3>განათება</h3>
+          <div class="evaluate-star-icon">
+            <span class="discount">120.00 ₾</span>
+          </div>
+          <button class="add-to-basket-btn">კალათში დამატება</button>
+        </div>
+        <div class="popular-products-main-div">
+          <div class="popular-products-div1">
+            <div > 
+              <div class="popular-product-photo popular-product-photo11">
+             
+                <div class="heart-icon-div">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              
+              <div class="star-box"><img src="../Super-App-Project-3rd-Team/photos/Star 2.png" alt=""> <span> 5.0</span></div>
+
+            </div>
+          </div>
+          <h2>Koopman ჩარჩო</h2>
+          <h3>სურათის ჩარჩო</h3>
+          <div class="evaluate-star-icon">
+            <span class="discount">45.00 ₾</span>
+          </div>
+          <button class="add-to-basket-btn">კალათში დამატება</button>
+        </div>
+        <div class="popular-products-main-div">
+          <div class="popular-products-div1">
+            <div > 
+              <div class="popular-product-photo popular-product-photo12">
+             
+                <div class="heart-icon-div">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              
+              <div class="star-box"><img src="../Super-App-Project-3rd-Team/photos/Star 2.png" alt=""> <span> 5.0</span></div>
+
+            </div>
+          </div>
+
+          <h2>Seville Classics სათავსო</h2>
+          <h3>ორგანაიზერი</h3>
+          <div class="evaluate-star-icon">
+            <span class="discount">188.93 ₾ </span>
+            <span class="prise-line-through">269.00 ₾</span>
+            <div class="percentage-box">30%</div>
+          </div>
+          <button class="add-to-basket-btn">კალათში დამატება</button>
+        </div>
+        <div class="popular-products-main-div">
+          <div class="popular-products-div1">
+            <div > 
+              <div class="popular-product-photo popular-product-photo9">
+             
+                <div class="heart-icon-div">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              
+              <div class="star-box"><img src="../Super-App-Project-3rd-Team/photos/Star 2.png" alt=""> <span> 5.0</span></div>
+
+            </div>
+          
+          </div>
+
+          <h2>Oslo Wooden Armchair</h2>
+          <h3>ეზოს სავარძელი</h3>
+          <div class="evaluate-star-icon">
+            <span class="discount">250.00 ₾</span>
+          </div>
+          <button class="add-to-basket-btn">კალათში დამატება</button>
+        </div>
+        <div class="popular-products-main-div">
+          <div class="popular-products-div1">
+            <div > 
+              <div class="popular-product-photo popular-product-photo10">
+             
+                <div class="heart-icon-div">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              
+              <div class="star-box"><img src="../Super-App-Project-3rd-Team/photos/Star 2.png" alt=""> <span> 5.0</span></div>
+
+            </div>
+           
+          </div>
+          <h2>Knotted Rope LED Lamp</h2>
+          <h3>განათება</h3>
+          <div class="evaluate-star-icon">
+            <span class="discount">120.00 ₾</span>
+          </div>
+          <button class="add-to-basket-btn">კალათში დამატება</button>
+        </div>
+        <div class="popular-products-main-div">
+          <div class="popular-products-div1">
+            <div > 
+              <div class="popular-product-photo popular-product-photo11">
+             
+                <div class="heart-icon-div">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              
+              <div class="star-box"><img src="../Super-App-Project-3rd-Team/photos/Star 2.png" alt=""> <span> 5.0</span></div>
+
+            </div>
+         
+          </div>
+          <h2>Koopman ჩარჩო</h2>
+          <h3>სურათის ჩარჩო</h3>
+          <div class="evaluate-star-icon">
+            <span class="discount">45.00 ₾</span>
+          </div>
+          <button class="add-to-basket-btn">კალათში დამატება</button>
+        </div>
+        <div class="popular-products-main-div">
+          <div class="popular-products-div1">
+            <div > 
+              <div class="popular-product-photo popular-product-photo12">
+             
+                <div class="heart-icon-div">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              
+              <div class="star-box"><img src="../Super-App-Project-3rd-Team/photos/Star 2.png" alt=""> <span> 5.0</span></div>
+
+            </div>
+         
+          </div>
+
+          <h2>Seville Classics სათავსო</h2>
+          <h3>ორგანაიზერი</h3>
+          <div class="evaluate-star-icon">
+            <span class="discount">188.93 ₾ </span>
+            <span class="prise-line-through">269.00 ₾</span>
+            <div class="percentage-box">30%</div>
+          </div>
+          <button class="add-to-basket-btn">კალათში დამატება</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    </section>
+
+    <section class="everything-event">
+      <div class="everything-event-center">
+
+          <div class="everything-event-detail">
+              <div>
+                  <h2>ყველაფერი დაუვიწყარი საზაფხულო<br> წვეულებებისთვის</h2>
+              </div>
+              <div> 
+                  <span>შეიძინე ჩვენთან საუკეთესო ფასად</span>
+              </div>
+              <div class="everything-event-Icon">
+                  <a href="">სრულად სანახავად</a>
+                  <img src="Image/everything-event-Icon.png" alt="">
+              </div>
+             
+
+          </div>
+      </div>
+  </section>
+<!-- salome's sectiom -->
+    <!-- footer section -->
+    <footer id="footer" class="footer">
+      <div class="footer-container">
+        <div class="footer-section help_section toggl_hight help-about-footer">
+          <div class="line"></div>
+          <h4 class="toggle-menu ">
+            დახმარება
+            <span class="arrowf">
+              <img src="./img/chamoshla.svg" alt="arrow" />
+            </span>
+          </h4>
+          <ul class="menu">
+            <li><a href="#">მესიჯის მიწერა</a></li>
+            <li><a href="#">შეფასება</a></li>
+            <li><a href="#">ხშირად დასმული კითხვები</a></li>
+            <li><a href="#">განვადებით შეძენა</a></li>
+            <li><a href="#">მისამართები</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section terms-conditions-footer">
+          <div class="line"></div>
+          <h4 class="toggle-menu ">
+            წესები & პირობები
+            <span class="arrowf">
+              <img src="./img/chamoshla.svg" alt="arrow" />
+            </span>
+          </h4>
+          <ul class="menu">
+            <li><a href="#">ვერიფიკაცია</a></li>
+            <li><a href="#">კონფიდენციალურობა</a></li>
+            <li><a href="#">უსაფრთხოების წესები</a></li>
+            <li><a href="#">საიტის წესები</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section foter_mobel_sect about-us-footer">
+          <div class="line"></div>
+          <h4 class="toggle-menu">
+            ჩვენს შესახებ
+            <span class="arrowf">
+              <img src="./img/chamoshla.svg" alt="arrow" />
+            </span>
+          </h4>
+          <ul class="menu">
+            <li><a href="#">ვინ ვართ ჩვენ</a></li>
+            <li><a href="#">ბლოგი</a></li>
+            <li><a href="#">გაყიდე ჩვენთან</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section contact-us-footer">
+          <div class="line"></div>
+          <h4 class="toggle-menu ">
+            დაგვიკავშირდით
+            <span class="arrowf">
+              <img src="./img/chamoshla.svg" alt="arrow" />
+            </span>
+          </h4>
+          <ul class="menu">
+            <li>
+              <a href="tel:+9955550120" class="tel_mail">(406) 555-0120</a>
+            </li>
+            <li>
+              <a class="mail-footer" href="mailto:support@shopeasy.com">support@shopeasy.com</a>
+            </li>
+          </ul>
+          <div class="line"></div>
+          <div class="social-media">
+            <a href="#"><img src="./img/icon-facebook.png" alt="Facebook" /></a>
+            <a href="#"><img src="./img/icon-instagram.png" alt="Instagram" /></a>
+            <a href="#"><img src="./img/icon-linkedin.png" alt="LinkedIn" /></a>
+            <a href="#"><img src="./img/icon-youtube.png" alt="YouTube" /></a>
+          </div>
+        </div>
+        <div class="footer-section app-links">
+          <a href="#"
+            ><img class="store" src="./img/App Store.png" alt="App Store"
+          /></a>
+          <a href="#"
+            ><img class="store google-play" src="./img/Google Play.png" alt="Google Play"
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/mobile.js"></script>
+    <script src="./js/pool_section.js"></script>
+   
+    
+ <!-- salome's sectiom -->
+    <!-- footer section -->
+   <!-- <div id="footer">
+     
+      </div> -->
+    <!--end  salome's sectiom -->
+    <script src="./js/registration.js"></script>
+    <script src="./js/basket.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/header-nav.js"></script>
+    <script src="./js/popularproducts.js"></script>
+    <script src="./js/sale-slideer.js"></script>
+    <script src="./js/mobile-burger-menu.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- <script src="footer.js"></script> -->
+    <script src="./js/pool_section.js"></script>
+    <script src="./js/basket.js"></script>
+  </body>
+</html>

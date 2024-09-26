@@ -1,0 +1,1179 @@
+@import url("https://free.bboxtype.com/embedfonts/?family=FiraGO:100i,400,500,600,700");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+/* @font-face {
+  font-family: figaro300;
+  src: url(../fonts/firago-latin-300-normal.ttf);
+}
+@font-face {
+  font-family: figaro500;
+  src: url(../fonts/firago-latin-500-normal.ttf);
+} */
+
+/* font-family: "FiraGO", sans-serif; */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "FiraGO", sans-serif;
+}
+body {
+  margin: 0px;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+/*  */
+/* pool-section */
+/*  */
+.pool {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.pool-section {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* gap: 20px; */
+}
+
+.product-card-pool {
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  width: 400px;
+  height: 298px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.picture-pool {
+  width: 368px;
+  height: 214px;
+}
+.product-card-pool p {
+  font-weight: 500;
+
+  font-size: 24px;
+  line-height: 31.2px;
+  font-family: "FiraGO", sans-serif;
+  color: #363939;
+}
+
+.auzisasrialo,
+.auzisasrialo p {
+  background-color: #ffe393;
+}
+
+.auzi,
+.auzi p {
+  background-color: #e7d1ee;
+}
+.ixvi,
+.ixvi p {
+  background-color: #d8e4c2;
+}
+.btnixvi {
+  /* padding-left: 40px; */
+}
+.products-section {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  justify-content: space-around;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.product-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+
+.arrow-button {
+  background: none;
+  /* background-color: #572fe6; */
+  border: none;
+  cursor: pointer;
+  width: 46px;
+  height: 36px;
+  border-radius: 6px;
+}
+
+.arrow-button img {
+  width: 40px;
+  height: 40px;
+}
+
+.product-card-pool:hover {
+  transform: translateY(-10px);
+}
+
+.product-card-pool:hover {
+  transform: translateY(-10px);
+}
+
+.pool-section {
+  display: flex;
+  transition: transform 0.5s ease;
+  /* width: 300%;  */
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .pool-section {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scroll */
+    scroll-snap-type: x mandatory; /* Enable snap scrolling */
+    scroll-behavior: smooth; /* Smooth scrolling */
+    padding: 0 10px; /* Padding for centering */
+    gap: 20px; /* Gap between divs */
+  }
+  .product-card-pool {
+    flex: 0 0 80%;
+    margin: 0 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    /* width: auto; */
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .picture-pool {
+    width: auto;
+    height: 84px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .product-info {
+    margin-top: 10px;
+  }
+
+  .product-info p {
+    margin: 10px 0;
+    font-size: 12px;
+    color: #333;
+  }
+
+  .arrow-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .arrow-button img {
+    width: 12px;
+    height: 12px;
+  }
+
+  /* Background colors for different product cards */
+  #auzisasrialo {
+    background-color: #ffe5a1;
+  }
+
+  #auzi {
+    background-color: #e7d3f2;
+  }
+
+  #ixvi,
+  .ixvi p {
+    background-color: #cff4e1;
+  }
+  .pool-section {
+    display: flex;
+    overflow-x: scroll; /* Enable horizontal scroll */
+    scroll-snap-type: x mandatory; /* Snap scrolling */
+    scroll-behavior: smooth; /* Smooth scrolling */
+  }
+
+  .product-card-pool {
+    flex: 0 0 70%; /* Adjust this to make divs 70% of the container width */
+    margin-right: 10px; /* Optional: add some space between cards */
+    scroll-snap-align: center; /* Snap the cards to the center */
+  }
+
+  /* .pool-section.center-0 {
+    transform: translateX(20%);
+  }
+
+  .pool-section.center-1 {
+    transform: translateX(-20%);
+  }
+
+  .pool-section.center-2 {
+    transform: translateX(-60%);
+  } */
+}
+
+/*  */
+/* end fool section */
+/*  */
+/*  */
+/* footer section */
+/*  */
+
+footer {
+  padding: 20px 0;
+}
+
+.footer,
+.pool,
+.popularbrend {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.footer-container,
+.pool-section {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 35px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popular_brends {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 35px;
+}
+
+.help_section {
+  width: 314px;
+  height: 264px;
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 24px;
+  font-family: "FiraGO", sans-serif;
+  margin-bottom: 24px;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 24px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #535353;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: "FiraGO", sans-serif;
+}
+
+.footer-section p {
+  margin-bottom: 24px;
+}
+
+.social-media a {
+  display: inline-block;
+}
+
+.social-media img {
+  width: 24px;
+  height: 24px;
+}
+
+.app-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.store {
+  max-width: 180px;
+  height: 52px;
+}
+
+.app-links a {
+  display: inline-block;
+  margin-bottom: 24px;
+}
+.mail-footer {
+  font-family: "FiraGO", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.5px;
+  text-align: left;
+}
+.arrowf {
+  display: none;
+}
+.help-about-footer {
+  width: 314px;
+  height: 264px;
+}
+.terms-conditions-footer {
+  width: 253px;
+  height: 259px;
+}
+.about-us-footer {
+  width: 200px;
+  height: 259px;
+}
+.contact-us-footer {
+  width: 181.61px;
+  height: 157px;
+  margin-right: 20px;
+}
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-section {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .arrowf {
+    display: block;
+    /* height: 40px; */
+  }
+
+  .footer-section {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    text-align: left;
+    height: auto;
+  }
+  .footer-section h4 {
+    font-weight: 400;
+    font-weight: 12px;
+    line-height: 13.8px;
+    font-family: "FiraGO", sans-serif;
+  }
+
+  .toggle-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    text-align: left;
+  }
+
+  .help_section {
+    height: auto;
+  }
+
+  .menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    text-align: left;
+    font-weight: 12px;
+    font-weight: 400;
+    line-height: 13px;
+  }
+
+  .menu li {
+    margin: 10px 0;
+  }
+
+  .menu li a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  .line {
+    height: 1px;
+    background-color: #cbd2e0;
+    /* width: 343px; */
+    margin-bottom: 10px;
+  }
+
+  .social-media {
+    display: flex;
+    justify-content: space-around;
+    width: 35%;
+    margin: 10px 0;
+  }
+  .google-play {
+    margin-top: -20px;
+  }
+
+  .app-links {
+    display: flex;
+    justify-content: right;
+    margin-left: 100px;
+    margin-top: -60px;
+
+    width: 40%;
+  }
+
+  .store {
+    width: 131px;
+    height: 38px;
+    gap: none;
+  }
+}
+
+/*  */
+/*  */
+/*  */
+
+.popular_brens_title {
+  text-align: left;
+  align-items: center;
+  margin-bottom: 24px;
+  font-weight: 500;
+  line-height: 34px;
+  color: #000000;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "FiraGO", sans-serif;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.flex-item {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  flex: 1 1 calc(33.333% - 20px);
+  max-width: calc(33.333% - 20px);
+  display: flex;
+  flex-direction: column;
+  /* position: relative; */
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.hape {
+  background-color: #e7d1ee;
+  max-width: 90%;
+  height: 583px;
+
+  /* font-weight: 500;
+  font-family: "FiraGO", sans-serif; */
+}
+.dyson {
+  background-color: #ffe393;
+  max-width: 90%;
+  height: 285px;
+  margin-bottom: 20px;
+  /* font-weight: 500;
+  font-family: "FiraGO", sans-serif; */
+}
+.greenpan {
+  background-color: #d8e4c2;
+  max-width: 90%;
+  height: 277px;
+  /* font-weight: 500;
+  font-family: "FiraGO", sans-serif; */
+}
+.flex-item img {
+  max-width: 100%;
+  height: auto;
+  /* margin-bottom: 15px; */
+  border-radius: 8px;
+}
+
+.label {
+  font-weight: 500;
+  line-height: 31.2px;
+  font-size: 24px;
+  color: #363939;
+  font-family: "FiraGO", sans-serif;
+}
+
+.flex-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 750px) {
+  .flex-item {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .arrow {
+    height: 20px;
+    width: 20px;
+    border-radius: none;
+  }
+
+  .hape {
+    flex: 1 1 100%;
+    max-width: 100%;
+    height: 229px;
+  }
+
+  .hape_img {
+    max-width: 134px;
+    height: 168px;
+    height: 200px;
+  }
+  .hape_mob {
+    margin-bottom: -60px;
+  }
+  .dyson,
+  .greenpan {
+    flex: 1 1 80%;
+    max-width: 80%;
+    height: 109px;
+  }
+  .dyson {
+    margin-bottom: 10px;
+  }
+  .label {
+    font-weight: bold;
+    line-height: 15px;
+    font-size: 12px;
+    color: #363939;
+    font-family: "FiraGO", sans-serif;
+  }
+}
+/* end salome 's section */
+/* end popular brends section */
+
+/* page 2 */
+/* popular brens */
+
+.popular_brends_page2section {
+  max-width: 70%;
+  margin-left: -415px !important;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  border-radius: 10px;
+  background-color: #007bff !important;
+}
+
+.flex_item_page2 {
+  width: 925px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #007bff;
+  box-sizing: border-box; /* Added to ensure predictable sizing */
+}
+
+.popular_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.suavinex {
+  width: 505px;
+  height: 479px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.suavinex p {
+  background-color: #e7d1ee;
+  margin-bottom: 20px;
+}
+
+.twistshake {
+  max-width: 400px;
+  height: 229px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.twistshake,
+.twistshake p {
+  background-color: #ffe393;
+}
+
+.parsa {
+  max-width: 400px;
+  height: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.parsa,
+.parsa p {
+  background-color: #d8e4c2;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 750px) {
+  .popular_brends_page2sect {
+    max-width: 100%; /* Changed from 120% */
+    margin: 0 auto;
+    padding: 10px; /* Added padding for better spacing */
+  }
+
+  .flex-container {
+    flex-direction: column;
+    gap: 20px; /* Added gap for vertical spacing */
+  }
+
+  .popular_img_flex {
+    max-width: 90%;
+  }
+
+  .suavinex {
+    max-width: 166px;
+    height: 229px;
+  }
+
+  .suavinex p {
+    margin: 0; /* Adjusted to remove extra space */
+  }
+
+  .twistshake {
+    max-width: 165px;
+    height: 109px;
+    margin-bottom: 10px;
+  }
+
+  .parsa {
+    max-width: 165px;
+    height: 109px;
+  }
+
+  /* Additional tweaks for mobile */
+  .flex_item_page2 {
+    max-width: 100%; /* Allow full-width elements on small screens */
+    margin-bottom: 10px; /* Add space between items */
+  }
+}
+
+/* bike section */
+
+.bike_section {
+  max-width: 70%;
+  margin-left: 415px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+.bike_div {
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 925px;
+  height: 341px;
+
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #e6f3ff;
+}
+
+.bike_content {
+  /* max-width: 50%; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 90px;
+}
+
+.bike_title h2 {
+  font-size: 24px;
+  color: #002a4c;
+  font-weight: 500;
+  font-family: "FiraGO", sans-serif;
+  margin-top: -20px;
+}
+
+.bike_button {
+  background-color: #e6f3ff;
+  color: #008bff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  /* border: 1px solid #008BFF; */
+  flex-direction: row;
+  margin-bottom: -20px;
+}
+.bike_button button {
+  border: 1px solid #008bff;
+  gap: 20px;
+}
+.bike_img {
+  max-width: 40%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 1000px) {
+  .bike_div {
+    width: 90%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bike_content {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .bike_img {
+    max-width: 80%;
+  }
+}
+@media (max-width: 750px) {
+  .bike_section {
+    max-width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .bike_div {
+    width: 100%;
+    height: 225px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* text-align: center; */
+  }
+
+  .bike_content {
+    /* max-width: 90%; */
+    margin-bottom: 20px;
+  }
+
+  .bike_img {
+    width: 186px;
+    height: 178px;
+    margin-left: -140px;
+  }
+  .bike_title {
+    margin-top: -75px;
+    padding-top: 0px;
+    margin-left: 0px;
+  }
+  .bike_title h2 {
+    width: 231px;
+    height: 54px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16.8px;
+    font-family: "FiraGO", sans-serif;
+    text-align: left;
+  }
+  .bike_button {
+    width: 153px;
+    height: 32px;
+    margin-bottom: -100px;
+    /* padding-bottom: 0px; */
+    margin-left: -15px;
+    gap: 0px;
+  }
+  .bike_button img {
+    width: 16px;
+    height: 16px;
+    margin-left: -10px;
+  }
+  .bike_button p {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 14px;
+    font-family: "FiraGO", sans-serif;
+    text-align: left;
+    text-wrap: nowrap;
+  }
+}
+/*  */
+/* review section */
+/*  */
+
+.reviews-section {
+  width: 65%;
+  padding: 20px;
+  background-color: #fff;
+  /* border-bottom: 1px solid #ddd; */
+  /* border-top: 1px solid #ddd; */
+  margin: 20px 20px 20px 50px;
+  max-width: 1200px;
+}
+
+.review-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.review-form textarea {
+  width: 100%;
+  height: 138px;
+  resize: none;
+  padding: 10px;
+  border: 1px solid #b2b2b2;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.rating_starss {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.rating_starss {
+  font-family: "FiraGO", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: #000000;
+}
+.stars_row {
+  display: flex;
+  flex-direction: row;
+}
+
+.stars_row span {
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  color: #a6a6a6;
+  cursor: pointer;
+}
+
+.stars_row span.selected {
+  color: gold;
+}
+
+.review-form button {
+  font-family: "FiraGO", sans-serif;
+  width: 190px;
+  height: 48px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 10px;
+  border: none;
+  background-color: #007bff;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+.review-form textarea {
+  font-family: "FiraGO", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: #b3b3b3;
+}
+.custmers_review {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+.custmers_review h4 {
+  font-family: BPG Arial;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 27.6px;
+  text-align: left;
+  color: #000000;
+}
+.custmers_review p {
+  font-family: FiraGO;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  text-decoration: underline 1px solid #000000;
+  color: #000000;
+}
+.review-list .review-item {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+.review-item {
+  height: 122px;
+  gap: 8px;
+}
+.review-list .review-item p {
+  margin: 5px 0;
+}
+.review-rating {
+  display: flex;
+  justify-content: space-between;
+}
+.review-date {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 12;
+  line-height: 18px;
+  color: #616161;
+}
+.review-rating span {
+  color: gold;
+  font-size: 20px;
+}
+.review-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16;
+  line-height: 24px;
+  color: #000000;
+}
+.rewiew_photo_name {
+  display: flex;
+  justify-content: left;
+  margin-top: 20px;
+  /* border-bottom: 1px solid #D2D3D3;
+  margin-bottom: 100px; */
+}
+.rewiew_photo_name img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.rewiew_photo_name p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 14;
+  line-height: 21px;
+  color: #000000;
+}
+.seeallbtn {
+  display: none;
+}
+.br-br {
+  margin-top: 50px !important;
+}
+.everything-fy-slider-section {
+  max-width: 100% !important;
+  margin-left: 0px;
+  padding-right: 0px;
+}
+.everything-fy-slider-div {
+  width: 1440px !important;
+}
+@media (max-width: 768px) {
+  .reviews-section {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    /* padding-right: 10px;
+    padding-left: 16px; */
+  }
+  .rating_starss,
+  .review-form textarea,
+  .custmers_review h4 {
+    font-size: 12px;
+  }
+  .custmers_review h4 {
+    font-weight: 600;
+    line-height: 15px;
+  }
+
+  .review-form button {
+    font-family: "FiraGO", sans-serif;
+    width: 133px;
+    height: 32px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 24px;
+    /* padding: 16px 24px 16px 24px; */
+    border: none;
+    background-color: #007bff;
+    color: #ffffff;
+    border-radius: 6px;
+    cursor: pointer;
+    /* align-self: flex-end; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .review-item {
+    max-width: 343px;
+    height: 142px;
+    gap: 8px;
+    margin-left: -16px;
+    /* margin-bottom: -20px; */
+  }
+  .review-rating span {
+    font-size: 16px;
+  }
+  .review-date {
+    color: #b1b2b2;
+    font-size: 12px;
+  }
+  .review-text {
+    font-size: 14;
+    line-height: 21px;
+    color: #797a7b;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .rewiew_photo_name {
+    margin-top: 0px;
+  }
+  .rewiew_photo_name p {
+    font-size: 12px;
+    line-height: 18px;
+    color: #797a7b;
+  }
+  .rewiew_photo_name img {
+    width: 24px;
+    height: 24px;
+    /* margin-bottom: 16px; */
+  }
+
+  .seeallbtn {
+    display: block;
+    width: 343px;
+    height: 48px;
+    padding: 0px 16px 0px 16px;
+    gap: 8px;
+    border-radius: 6px;
+    border: 1px solid #363939;
+    opacity: 0px;
+    background-color: #fff;
+    margin-left: -10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -50px;
+    margin-top: 40px;
+  }
+  .seeallbtn p {
+    font-family: "FiraGO", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #363939;
+  }
+  .review-list hr:nth-of-type(3) {
+    display: none;
+  }
+  .turn-products-div span,
+  .turn-products-div button {
+    display: none;
+  }
+  .popular-products-title-div h2 {
+    margin-left: -25px;
+    font-family: "FiraGO", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    text-align: left;
+  }
+  .everything-fy-slider-section {
+    max-width: 100% !important;
+    margin-left: 0px;
+    padding-right: 0px;
+  }
+
+  .popular-products-main-div {
+    width: 120px;
+    height: 279px;
+    border-radius: 8px 0px 0px 0px;
+
+    border: 1px solid var(--stroke, #efefef);
+    margin: 0px;
+  }
+  .all-popular-products-slider {
+    display: flex;
+    overflow-x: hidden; /* Hide scrollbar for a smooth look */
+    scroll-behavior: smooth; /* Smooth scrolling */
+  }
+
+  .all-popular-products {
+    display: flex;
+  }
+
+  .popular-products-main-div {
+    min-width: 50%; /* Each div will take 50% of the screen */
+  }
+
+  .all-popular-products {
+    margin-left: 2.5%; /* Add margin to align the first and second div better */
+  }
+}
