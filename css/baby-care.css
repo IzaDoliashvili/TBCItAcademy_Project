@@ -1,0 +1,606 @@
+
+/* rusos part */
+.whole-content{
+    padding-left: 100px;
+    margin-bottom: 40px;
+}
+.all-categ-1st-div{
+    margin: 40px 0 32px 0;
+    display: flex;
+    column-gap: 8px;
+    align-items: center;
+  }
+
+  .kid-and-cards{
+    column-gap: 133px;
+    display: flex;
+  }
+  .all-category a {
+   color:  #000000;
+  
+  }
+  .kid-categories{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+  }
+  .kid-categories ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+  }
+  .kid-cards{
+    width: 60vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .kid-card {
+    width: 31%;
+    height: 122px;
+    background-color:  #F4F4F4;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px 0 26px;
+    justify-content: space-between;
+   
+  }
+  .kid-card img{
+    width: 35%;
+    height: 84px;
+  }
+  #second-img{
+    width: 86px;
+    height: 98px;
+  }
+  #third-img{
+    width: 88px;
+    height: 84px;
+  }
+  #fifth-img{
+    width: 57px;
+    height: 98px;
+  }
+  #sixth-img{
+    width: 57px;
+    height: 60px;
+  }
+  @media (max-width: 1000px) {
+    .kid-categories{
+        display: none;
+    }
+    .kid-cards{
+        width: 36vw;
+    }
+    .kid-card:nth-child(n+7) {
+        flex: 1 0 100%; 
+    }
+    .kid-card {
+        width: 166px;
+        height: 92px;
+    }
+    .kid-card p{
+        font-size: 12px;
+    }
+    .whole-content{
+        padding-inline: 16px;
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    .kid-card img{
+        width: 58px;
+        height: 73px;
+      }
+      #second-img{
+        width: 64px;
+        height: 73px;
+      }
+      #third-img{
+        width: 62px;
+        height: 71px;
+      }
+      #fifth-img{
+        width: 67px;
+        height: 79px;
+      }
+      #sixth-img{
+        width: 57px;
+        height: 60px;
+      }
+  }
+  /* rusos part ends here  */
+/* გადასატანი მაქვს ეს baby food css */
+  .see-all {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    color:  #000000;
+    font-weight: 600;
+  }
+  /* iza's part */
+  
+/* section baby-care-popular */
+.baby-care-sale {
+  width: 70%;
+  font-family: "figaro300";
+  margin-left: 25%;
+}
+.baby-care-sale-container {
+  width: 90%;
+  margin: auto;
+}
+.baby-care-sale-container-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.baby-care-sale-container-head a {
+  font-size: 14px;
+  color: #000000;
+  text-decoration: underline;
+}
+
+.baby-card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.baby-sale-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  position: relative;
+}
+
+.baby-sale-card img {
+  width: 100%;
+  height: auto;
+}
+
+.baby-sale-card .rating {
+  top: 10px;
+  left: 10px;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #717d96;
+  font-size: 18px;
+}
+.fa-star {
+  font-size: 12px;
+}
+
+.baby-sale-card .heart-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: 1px solid #efefef;
+  border-radius: 100px;
+  padding: 5px 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.baby-sale-card .details {
+  padding: 20px 10px;
+}
+
+.baby-sale-card .brand {
+  font-size: 20px;
+  /* font-weight: 600; */
+  margin-bottom: 10px;
+  font-family: "figaro500";
+}
+
+.baby-sale-card .description {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.baby-sale-card .price {
+  font-size: 20px;
+  color: #333;
+  font-family: "figaro500";
+}
+.baby-sale-card .new-price {
+  font-family: "figaro500";
+}
+
+.baby-sale-card .old-price {
+  text-decoration: line-through;
+  margin-left: 10px;
+  color: #999;
+  font-size: 16px;
+}
+
+.baby-sale-card .discount {
+  padding: 5px;
+  background-color: #ff3333;
+  color: white;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.baby-sale-card .button {
+  margin-top: 10px;
+}
+
+.baby-sale-card .button button {
+  width: 100%;
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 12px;
+  font-family: "figaro500";
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.baby-sale-card .button button:hover {
+  background-color: #0056b3;
+}
+
+/* section baby-care-popular */
+
+.baby-care-popular {
+  width: 70%;
+  font-family: "figaro300";
+  margin-left: 25%;
+}
+.baby-care-popular-container {
+  width: 90%;
+  margin: auto;
+}
+.baby-care-popular-container-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.baby-popular-card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.baby-care-popular-container-head a {
+  font-size: 14px;
+  color: #000000;
+  text-decoration: underline;
+}
+.baby-popular-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  position: relative;
+}
+.baby-popular-card img {
+  max-width: 100%;
+}
+.baby-popular-card h2 {
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: normal;
+}
+.baby-popular-card .rating {
+  top: 10px;
+  left: 10px;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #717d96;
+  font-size: 18px;
+  font-family: "figaro500";
+}
+
+.baby-popular-card .brand {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #2d3648;
+  font-family: "figaro500";
+}
+.baby-popular-card .description {
+  color: #666;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.baby-popular-card .price {
+  font-size: 20px;
+  font-family: "figaro500";
+
+  color: #2d3648;
+}
+.baby-popular-card .details {
+  padding: 20px 10px;
+}
+.baby-popular-card .heart-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: 1px solid #efefef;
+  border-radius: 100px;
+  padding: 5px 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.baby-popular-card .button {
+  margin-top: 10px;
+}
+
+.baby-popular-card .button button {
+  width: 100%;
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "figaro500";
+}
+
+.baby-popular-card .button button:hover {
+  background-color: #0056b3;
+}
+
+/* section baby-care-sea */
+
+.baby-care-sea {
+  width: 70%;
+  font-family: "figaro300";
+  margin-left: 25%;
+}
+.baby-care-sea-container {
+  width: 90%;
+  margin: auto;
+}
+
+.baby-care-sea-container-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.baby-sea-card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.baby-care-sea-container-head a {
+  font-size: 14px;
+  color: #000000;
+  text-decoration: underline;
+}
+.baby-sea-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  position: relative;
+}
+.baby-sea-card img {
+  max-width: 100%;
+}
+.sea-img {
+  height: 220px;
+}
+.baby-sea-card .rating {
+  top: 10px;
+  left: 10px;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #717d96;
+  font-size: 18px;
+}
+.baby-sea-card .brand {
+  font-size: 20px;
+  font-family: "figaro500";
+  margin-bottom: 10px;
+  color: #2d3648;
+}
+.baby-sea-card .description {
+  color: #666;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.baby-sea-card .price {
+  font-size: 20px;
+  font-family: "figaro500";
+  color: #2d3648;
+}
+.baby-sea-card .details {
+  padding: 20px 10px;
+}
+.baby-sea-card .heart-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: 1px solid #efefef;
+  border-radius: 100px;
+  padding: 5px 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.baby-sea-card .button {
+  margin-top: 10px;
+}
+
+.baby-sea-card .button button {
+  width: 100%;
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "figaro500";
+}
+
+.baby-sea-card .button button:hover {
+  background-color: #0056b3;
+}
+#baby-care-hidden-button {
+  display: none;
+}
+
+/* baby-care responsive */
+@media (max-width: 900px) {
+  .baby-card-container {
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 10px;
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .baby-popular-card-container {
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 10px;
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .baby-sea-card-container {
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 10px;
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .baby-care-sale , .baby-care-popular , .baby-care-sea {
+    width: 100%;
+    font-family: "figaro300";
+    margin-left: 0%;
+}
+}
+
+@media (max-width: 750px) {
+  .baby-sale-card,
+  .baby-popular-card,
+  .baby-sea-card {
+    min-width: calc(100% - 200px);
+    scroll-snap-align: start;
+  }
+}
+@media (max-width: 550px) {
+  .baby-sale-card,
+  .baby-popular-card,
+  .baby-sea-card {
+    min-width: calc(100% - 150px);
+    scroll-snap-align: start;
+    max-height: 285px;
+  }
+
+  .baby-care-sale-container-head,
+  .baby-care-popular-container-head,
+  .baby-care-sea-container-head {
+    font-size: 8px;
+  }
+  .baby-sale-card .details,
+  .baby-popular-card .details,
+  .baby-sea-card .details {
+    padding: 5px;
+  }
+  .baby-sale-card .brand,
+  .baby-popular-card .brand,
+  .baby-sea-card .brand {
+    font-size: 12px;
+  }
+  .baby-sale-card .description,
+  .baby-popular-card .description,
+  .baby-sea-card .description {
+    font-size: 10px;
+  }
+  .baby-sale-card .price,
+  .baby-popular-card .price,
+  .baby-sea-card .price {
+    font-size: 12px;
+  }
+  .baby-sale-card .old-price,
+  .baby-popular-card .old-price,
+  .baby-sea-card .old-price {
+    font-size: 10px;
+    margin-left: 0px;
+  }
+  .baby-sale-card .discount {
+    font-size: 12px;
+    margin-left: 0px;
+    padding: 3px;
+  }
+  .baby-sale-card .button,
+  .baby-popular-card .button,
+  .baby-sea-card .button {
+    display: none;
+  }
+  #baby-care-hidden-button {
+    display: flex;
+    margin-top: 5px;
+  }
+  #baby-care-hidden-button a {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+  #baby-care-hidden-button a img {
+    width: 16px;
+    margin-right: 5px;
+  }
+  .baby-sale-card .rating,
+  .baby-popular-card .rating,
+  .baby-sea-card .rating {
+    font-size: 12px;
+  }
+  .baby-sale-card
+    .heart-icon
+    .baby-popular-card
+    .heart-icon
+    .baby-sea-card
+    .heart-icon {
+    padding: 5px 7px;
+    font-size: 15px;
+    top: 7px;
+    right: 7px;
+  }
+  .sea-img {
+    height: 140px;
+  }
+}

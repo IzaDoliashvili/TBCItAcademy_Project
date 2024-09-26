@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ბავშვის მოვლა</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/baby-care.css">
+    <link rel="stylesheet" href="../css/footer.css">
+</head>
+<body>
+  <header>
+    <div class="center-div">
+        <div class="center-div-top">
+            <div class="logo">
+              <a href="../index.html">
+                <img src="../Image/ShopEasy.png" alt="">
+              </a>  
+            </div>
+            <div class="search">
+                <input type="text" placeholder="ძიება">
+                <img src="../Image/Icon Right.png" alt="">
+            </div>
+            <div class="center-div-top-buttons">
+                <div class="center-div-top-buttons-icons">
+                  <div  id="basket-icon"                                                                                                                                                                                                      >
+                    <img src="../Image/icon-shopping-cart.png" alt="">
+                    <div class="red-dot"></div>
+                  </div>
+                   
+                </div>
+                <div class="center-div-top-buttons-icons">
+                  <a href="">
+                    <img src="../Image/Frame 1.png" alt="">
+                  </a>
+                    
+                </div>
+                <div class="center-div-top-buttons-login">
+                  <button id="loginButton">შესვლა</button>
+                </div>
+                
+            </div>
+            <div class="hidden-button">
+                <a href="javascript:void(0)">
+                    <img src="../Image/icon-align-justify.png" alt="Menu">
+                </a>
+            </div>
+            <div class="menu-container" id="menuContainer">
+                <div class="menu-header">
+                    <!-- <span>Menu</span> -->
+                    <button id="closeButton">&times;</button>
+                </div>
+                <ul id="menuList"></ul>
+            </div>
+       </div>
+       <div class="center-div-lower">
+        <div class="center-div-lower-main">
+            <div class="burger-menu" id="burger-menu">
+                <div>
+                    <img src="../Image/icon-align-justify.png" alt="">
+                </div>
+                <span>ყველა კატეგორია</span>
+            </div>
+            <div class="carousel-wrap">
+                <div class="carousel" id="carousel">
+                    <div class="carousel-slide" >
+                        <div class="carousel-item"><a href="">ფასდაკლება</a></div>
+                        <div class="carousel-item"><a href="">ტექნიკა</a></div>
+                        <div class="carousel-item"><a href="../html/baby-care.html">ბავშვის მოვლა</a></div>
+                        <div class="carousel-item"><a href="">სახლი & მოვლა</a></div>
+                        <div class="carousel-item"><a href="">თავის მოვლა</a></div>
+                        <div class="carousel-item"><a href="">სათამაშოები</a></div>
+                        <div class="carousel-item"><a href="">ფიტნესი</a></div>
+                    </div>
+                    <div class="carousel-slide" >
+                        <div class="carousel-item"><a href="">ბარი & სხვა</a></div>
+                        <div class="carousel-item" id="xx"><a href="">წვეულება</a></div>
+                        <div class="carousel-item"><a href="">წიგნები</a></div>
+                        <div class="carousel-item"><a href="">ცხოველების მოვლა</a></div>
+                        <div class="carousel-item"><a href="">დასვენება & მოგზაურობა</a></div>
+                        <div class="carousel-item"><a href="">ჯანმრთელობა</a></div>
+                        <div class="carousel-item" id="xx"><a href="">ეზოს მოვლა</a></div>
+                    </div>
+                </div>
+                <button class="carousel-nav prev" onclick="prevSlide()">&#10094;</button>
+                <button class="carousel-nav next" onclick="nextSlide()">&#10095;</button>
+            </div>
+            
+        </div>
+    </div> 
+</header>
+<div class="category-section" id="category-section">
+    <div class="cancel-icon"><img src="../Image/icon-x.png" alt=""></div>
+<div class="scrollable-content">
+    
+</div>
+</div>
+
+    <!-- რუსოს ნაწილი დასაწყისი  -->
+     <div class="whole-content">
+        <div class="all-category">
+     <div class="all-categ-1st-div">
+     <span >ყველა კატეგორია</span><span>></span><span >ბავშვის მოვლა</span> </div>
+    <div class="kid-and-cards">
+     <div class="kid-categories">
+        <h2>ბავშვის მოვლა</h2>
+        <ul>
+            <li><a href="../html/baby-food.html" class="ruso"> ბავშვის კვება </a></li>
+            <li><a href="#"> საბავშვო ინვენტარი </a></li>
+            <li><a href="#">  ტანსაცმელი </a></li>
+            <li><a href="#"> აქსესუარები </a></li>
+            <li><a href="#"> ბავშვის ჰიგიენა </a></li>
+            <li><a href="#"> ფასდაკლება </a></li>
+        </ul>
+     </div>
+     <div class="kid-cards">
+
+        <div class="kid-card" id="babyFoodCard">
+        <p>ბავშვის კვება</p>
+        <img src="../photos/ბავშვის კვება.png" alt="">
+    </div>
+    <div class="kid-card">
+        <p> საბავშვო ინვენტარი</p>
+        <img id="second-img" src="../photos/საბავშვო ინვენტარი.png" alt="">
+
+    </div>
+    <div class="kid-card">
+        <p>ტანსაცმელი</p>
+        <img src="../photos/ტანსაცმელი.png" alt="">
+
+    </div>
+
+
+        <div class="kid-card">
+        <p>აქსესუარები </p>
+        <img id="fourth-img" src="../photos/აქსესუარები.png" alt="">
+
+    </div>
+    <div class="kid-card">
+        <p>ბავშვის ჰიგიენა</p>
+        <img id="fifth-img" src="../photos/ბავშვის ჰიგიენა.png" alt="">
+
+    </div>
+    <div class="kid-card">
+        <p>ფასდაკლება </p>
+        <img id="sixth-img" src="../photos/ფასდაკლება.png" alt="">
+    </div>
+</div>
+</div>
+    </div>
+    </div>
+    <!-- რუსოს ნაწილი დასასრული -->
+    <div class="category-section" id="category-section">
+        <div class="cancel-icon"><img src="../Image/icon-x.png" alt=""></div>
+    <div class="scrollable-content">
+        
+    </div>
+    </div>
+    <!-- იზას ნაწილი -->
+    
+    <section class="baby-care-sale">
+        <div class="baby-care-sale-container">
+            <div class="baby-care-sale-container-head">
+                <h2>-50% ფასდაკლება ბავშვის ტანსაცმელზე</h2>
+                <a href="">სრულად</a>
+            </div>
+            <div class="baby-card-container" id="babycardContainer"></div>
+        </div>
+    </section>
+
+
+    <!-- bike section -->
+     <!-- salome's section -->
+    <section class="bike_section">
+    <div class="bike_div">
+        <div class="bike_content">
+          <div class="bike_title">
+            <h2>აღმოაჩინე Globber-ის <br> ველოსიპედები მხოლოდ ჩვენთან </h2>
+          </div>
+          <div class="bike_button"> 
+            <button class="bike_button">
+                <p> სრულად სანახავად</p>
+                <img src="../img/Icon Right.png" alt="">
+            </button>
+          </div>
+        </div>
+        <img class="bike_img" src="../img/bike.png" alt="Bike">
+    </div>
+</section>
+ <!-- end bike section -->
+     <!--end salome's section -->
+
+     
+    <section class="baby-care-popular">
+        <div class="baby-care-popular-container">
+            <div class="baby-care-popular-container-head">
+                <h2>ყველაზე მოთხოვნადი პროდუქცია</h2>
+                <a href="">სრულად</a>
+            </div>
+            <div class="baby-popular-card-container" id="babypopularcardContainer"></div>
+        </div>
+    </section>
+
+
+    <!-- salomes section -->
+    <!--  start  popular brends section  -->
+    <section class="popular_brends_page2section">
+        <div class=" popular_brends_page2sect">
+          <h4 class="popular_brens_title title_h4">პოპულარული ბრენდები</h4>
+          <div class="flex-container">
+            <div class="flex_item_page2 flex-item suavinex ">
+              <img  class="hape_img popular_img_flex" src="../img/botlisawovara.png" alt="Hape" />
+              <div class="suavinex_sextdiv label product-info hape_mob ">
+                <p>Suavinex</p>
+                <button class="arrow-button arrowpop">
+                  <img src="../img/Button.png" alt="Arrow" />
+                </button>
+              </div>
+            </div>
+            <div class="double_section">
+              <div class="flex-item twistshake flex_item_page2">
+                <img class=" hape_img popular_img_flex" src="../img/danachangali.png" alt="Dyson" />
+                <div class="label product-info">
+                  <p>Twistshake</p>
+                  <button class="arrow-button arrowpop">
+                    <img src="../img/Button.png" alt="Arrow" />
+                  </button>
+                </div>
+              </div>
+              <div class="flex-item parsa flex_item_page2">
+                <img class="hape_img popular_img_flex" src="../img/chiamaia.png" alt="GreenPan" />
+                <div class="label product-info">
+                  <p>Parsa</p>
+                  <button class="arrow-button arrowpop">
+                    <img src="../img/Button.png" alt="Arrow" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+        <!-- end salomes section -->
+         <!-- end popular section -->
+    <section class="baby-care-sea">
+        <div class="baby-care-sea-container">
+            <div class="baby-care-sea-container-head">
+                <h2>ზღვისთვის საჭირო პროდუქცია</h2>
+                <a href="">სრულად</a>
+            </div>
+            <div class="baby-sea-card-container" id="babyseacardContainer"></div>
+        </div>
+    </section>
+    <!-- იზას დასასრული -->
+    <!-- salome's sectiom -->
+    <!-- footer section -->
+    <footer id="footer" class="footer">
+      <div class="footer-container">
+        <div class="footer-section help_section toggl_hight help-about-footer">
+          <div class="line"></div>
+          <h4 class="toggle-menu ">
+            დახმარება
+            <span class="arrowf">
+              <img src="../img/chamoshla.svg" alt="arrow" />
+            </span>
+          </h4>
+          <ul class="menu">
+            <li><a href="#">მესიჯის მიწერა</a></li>
+            <li><a href="#">შეფასება</a></li>
+            <li><a href="#">ხშირად დასმული კითხვები</a></li>
+            <li><a href="#">განვადებით შეძენა</a></li>
+            <li><a href="#">მისამართები</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section terms-conditions-footer">
+          <div class="line"></div>
+          <h4 class="toggle-menu ">
+            წესები & პირობები
+            <span class="arrowf">
+              <img src="../img/chamoshla.svg" alt="arrow" />
+            </span>
+          </h4>
+          <ul class="menu">
+            <li><a href="#">ვერიფიკაცია</a></li>
+            <li><a href="#">კონფიდენციალურობა</a></li>
+            <li><a href="#">უსაფრთხოების წესები</a></li>
+            <li><a href="#">საიტის წესები</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section foter_mobel_sect about-us-footer">
+          <div class="line"></div>
+          <h4 class="toggle-menu">
+            ჩვენს შესახებ
+            <span class="arrowf">
+              <img src="../img/chamoshla.svg" alt="arrow" />
+            </span>
+          </h4>
+          <ul class="menu">
+            <li><a href="#">ვინ ვართ ჩვენ</a></li>
+            <li><a href="#">ბლოგი</a></li>
+            <li><a href="#">გაყიდე ჩვენთან</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section contact-us-footer">
+          <div class="line"></div>
+          <h4 class="toggle-menu ">
+            დაგვიკავშირდით
+            <span class="arrowf">
+              <img src="../img/chamoshla.svg" alt="arrow" />
+            </span>
+          </h4>
+          <ul class="menu">
+            <li>
+              <a href="tel:+9955550120" class="tel_mail">(406) 555-0120</a>
+            </li>
+            <li>
+              <a class="mail-footer" href="mailto:support@shopeasy.com">support@shopeasy.com</a>
+            </li>
+          </ul>
+          <div class="line"></div>
+          <div class="social-media">
+            <a href="#"><img src="../img/icon-facebook.png" alt="Facebook" /></a>
+            <a href="#"><img src="../img/icon-instagram.png" alt="Instagram" /></a>
+            <a href="#"><img src="../img/icon-linkedin.png" alt="LinkedIn" /></a>
+            <a href="#"><img src="../img/icon-youtube.png" alt="YouTube" /></a>
+          </div>
+        </div>
+        <div class="footer-section app-links">
+          <a href="#"
+            ><img class="store" src="../img/App Store.png" alt="App Store"
+          /></a>
+          <a href="#"
+            ><img class="store google-play" src="../img/Google Play.png" alt="Google Play"
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/mobile.js"></script>
+    <script src="../js/header-nav.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/mobile-burger-menu.js"></script>
+    <script src="../js/baby-care.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</body>
+</html>

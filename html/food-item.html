@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <script
+    src="https://kit.fontawesome.com/56f0f4a877.js"
+    crossorigin="anonymous"
+  ></script>
+    <link rel="stylesheet" href="css/food-item.css">
+    <link rel="stylesheet" href="../footer.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="../css/baby-care.css">
+    <link rel="stylesheet" href="../css/baby-food.css">
+    <link rel="stylesheet" href="../css/food-item.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header>
+    <div class="center-div">
+        <div class="center-div-top">
+            <div class="logo">
+              <a href="../index.html">
+                <img src="../Image/ShopEasy.png" alt="">
+              </a>  
+            </div>
+            <div class="search">
+                <input type="text" placeholder="ძიება">
+                <img src="../Image/Icon Right.png" alt="">
+            </div>
+            <div class="center-div-top-buttons">
+                <div class="center-div-top-buttons-icons">
+                  <div  id="basket-icon"                                                                                                                                                                                                      >
+                    <img src="../Image/icon-shopping-cart.png" alt="">
+                    <div class="red-dot"></div>
+                  </div>
+                   
+                </div>
+                <div class="center-div-top-buttons-icons">
+                  <a href="">
+                    <img src="../Image/Frame 1.png" alt="">
+                  </a>
+                    
+                </div>
+                <div class="center-div-top-buttons-login">
+                  <button id="loginButton">შესვლა</button>
+                </div>
+                
+            </div>
+            <div class="hidden-button">
+                <a href="javascript:void(0)">
+                    <img src="../Image/icon-align-justify.png" alt="Menu">
+                </a>
+            </div>
+            <div class="menu-container" id="menuContainer">
+                <div class="menu-header">
+                    <!-- <span>Menu</span> -->
+                    <button id="closeButton">&times;</button>
+                </div>
+                <ul id="menuList"></ul>
+            </div>
+       </div>
+       <div class="center-div-lower">
+        <div class="center-div-lower-main">
+            <div class="burger-menu" id="burger-menu">
+                <div>
+                    <img src="../Image/icon-align-justify.png" alt="">
+                </div>
+                <span>ყველა კატეგორია</span>
+            </div>
+            <div class="carousel-wrap">
+                <div class="carousel" id="carousel">
+                    <div class="carousel-slide" >
+                        <div class="carousel-item"><a href="">ფასდაკლება</a></div>
+                        <div class="carousel-item"><a href="">ტექნიკა</a></div>
+                        <div class="carousel-item"><a href="../html/baby-care.html">ბავშვის მოვლა</a></div>
+                        <div class="carousel-item"><a href="">სახლი & მოვლა</a></div>
+                        <div class="carousel-item"><a href="">თავის მოვლა</a></div>
+                        <div class="carousel-item"><a href="">სათამაშოები</a></div>
+                        <div class="carousel-item"><a href="">ფიტნესი</a></div>
+                    </div>
+                    <div class="carousel-slide" >
+                        <div class="carousel-item"><a href="">ბარი & სხვა</a></div>
+                        <div class="carousel-item" id="xx"><a href="">წვეულება</a></div>
+                        <div class="carousel-item"><a href="">წიგნები</a></div>
+                        <div class="carousel-item"><a href="">ცხოველების მოვლა</a></div>
+                        <div class="carousel-item"><a href="">დასვენება & მოგზაურობა</a></div>
+                        <div class="carousel-item"><a href="">ჯანმრთელობა</a></div>
+                        <div class="carousel-item" id="xx"><a href="">ეზოს მოვლა</a></div>
+                    </div>
+                </div>
+                <button class="carousel-nav prev" onclick="prevSlide()">&#10094;</button>
+                <button class="carousel-nav next" onclick="nextSlide()">&#10095;</button>
+            </div>
+            
+        </div>
+    </div> 
+</header>
+<div class="category-section" id="category-section">
+    <div class="cancel-icon"><img src="../Image/icon-x.png" alt=""></div>
+<div class="scrollable-content">
+    
+</div>
+</div>
+    <!-- იზას ნაწილის დასაწყისი -->
+    <section class="food-details">
+    <div class="breadcrumb">
+        <a href="#">ყველა კატეგორია</a> &gt; <a href="#">ბავშვის მოვლა</a> &gt; <a href="#">ბავშის კვება</a> &gt; <span> ადაპტირებული რძე</span>
+    </div>
+    <div class="product-details-container">
+        <div class="product-images">
+            <div class="thumbnail-images">
+                <img src="../Image/baby-food/food1.png" alt="Thumbnail 1">
+                <img src="../Image/food-item/food1.png" alt="Thumbnail 2">
+                <img src="../Image/food-item/food3.png" alt="Thumbnail 3">
+                <img src="../Image/food-item/food2.png" alt="Thumbnail 4">
+            </div>
+            <img src="../Image/baby-food/food1.png" alt="Product Image" class="main-image">
+           
+        </div>
+        <div class="product-infos">
+            <h1>Similac - Gold Stage 1 800g</h1>
+            <div class="rating">
+                <span>★★★★★</span> 5.0
+            </div>
+            <div class="short-descrioption">
+                <span>მოკლე აღწერა</span>
+                <p>ადაპტირებული რძე, კომფორტული მონელებისთვის და იმუნიტეტის შესანარჩუნებლად.
+                    შეიცავს ბავშვის ჯანსაღი ზრდისთვის აუცილებელ ყველა კომპონენტს,
+                    ცილის და რკინის შემცველობა აკმაყოფილებს ბავშვის ორგანიზმის საჭიროებებს.
+                    ვიტამინები და მინერალები (C, D, E, Ca, Mg, P და ა.შ.)
+                    - აუცილებელია ბავშვის ჯანსაღი ზრდისა და სრული განვითარებისთვის.</p>
+
+            </div>
+           
+        </div>
+        <div class="product-buy-container">
+            <div class="buy-info">
+                <p class="product-price">72.00₾</p>
+                <div class="quantity-selector">
+                    <label for="quantity">რაოდენობა</label>
+                    <div class="quantity-buttons">
+                        <button class="decrease">-</button>
+                        <input type="number" id="quantity" value="1">
+                        <button class="increase">+</button>
+                    </div>
+                </div>
+                <div class="shop-buttons">
+                <i class="fa fa-shopping-cart"><span class="hidden-span">დამატება</span></i>
+                <button class="add-to-cart"> ყიდვა</button>
+                </div>
+            </div>
+    </div>
+    
+    </section>
+    <section class="description">
+    <div class="product-description">
+        <h2>აღწერა</h2>
+        <p>Similac Gold ადაპტირებული რძე </p>
+
+        <span>ადაპტირებული რძე კომფორტული მონელებისთვის და იმუნიტეტის შესანარჩუნებლად. შეიცავს ბავშვის ჯანსაღი ზრდისთვის აუცილებელ ყველა კომპონენტს,
+        ცილის და რკინის შემცველობა აკმაყოფილებს ბავშვის ორგანიზმის საჭიროებებს. ვიტამინები და მინერალები (C, D, E, Ca, Mg, P და ა.შ.)
+        - აუცილებელია ბავშვის ჯანსაღი ზრდისა და სრული განვითარებისთვის.</span>
+        <div>
+        <p>არ შეიცავს პალმის ზეთს, გმო-ს, საღებავებს, კონსერვანტებს და გლუტენს.
+            <br>გაითვალისწინეთ </p>
+        
+        <span>იმისათვის რომ ადაპტირებული რძე იყოს სწორი კონსისტენციის, შენარჩუნებულ იქნას მასში ყველა სასარგებლო თვისებები და ბავშვმა მიიღოს
+            მაქსიმალური სარგებელი კვების პროცესში, საჭიროა მომზადდეს სწორად:</span>
+        
+        <ul>
+            <li>• დაიცავით ჰიგიენა - ყოველთვის დაიბანეთ ხელი კვების მომზადების წინ.</li>
+            <li>• გარეცხეთ საბავშვო ბოთლი და აქსესუარები საფუძვლიანად, გაასტერილეთ 10 წუთი ადუღებულ წყალში ან სასტერილიზაციო ხსნარში.</li>
+            <li>• რძის მომზადებისას აუცილებლად დაიცავით წყლის და ფხვნილის მოცულობის სწორი თანაფარდობა - პროპორციები მითითებულია ეტიკეტზე.</li>
+            <li>• ნარევი უნდა მომზადდეს უშუალოდ კვების წინ.</li>
+            <li>• ყოველთვის გადაასხით დარჩენილი საკვები, არ გამოიყენოთ შემდეგი კვებისთვის.</li>
+            
+
+        </ul>
+        
+        <p ><strong>ასაკი:</strong>0-6 თვე</p>
+        <p id="strong-p"><strong>მოცულობა:</strong> 800 გრ</p>
+    </div>
+    </div>
+    </section>
+    <!-- იზას ნაწილის დასასრული-->
+
+    <!-- salome's section -->
+     <!-- section review -->
+    <section class="reviews-section">
+      <div class="review-form">
+        <div class="rating_starss">
+              <div>
+                <p>დაამატე შეფასება</p>
+              </div>
+              <div class="stars_row">
+                <span  data-value="5">★</span>
+                <span  data-value="4">★</span>
+                <span  data-value="3">★</span>
+                <span  data-value="2">★</span>
+                <span  data-value="1">★</span> 
+              </div>
+              
+          </div>
+          <textarea placeholder="შეფასება"></textarea>
+          <button type="submit">დამატება</button>
+      </div>
+       <div class="custmers_review">
+         <h4>მომხმარებელთა შეფასებები</h4>
+         <p id="see_all_review">ყველას ნახვა</p>
+       </div>
+      <div class="review-list">
+          <div class="review-item">
+              <div class="review-rating">
+                <p class="review-date">January 1, 2023</p>
+                <span>★★★☆☆</span>
+              </div>
+              <p class="review-text">Massa morbi id lorem ultricies. Aliquet eu dolor cras ipsum hendrerit id ut habitant nisi. Lectus ipsum faucibus sed fringilla at tempor.</p>
+             <div class="rewiew_photo_name">
+              <img src="../img/brooklyn.png" alt="">
+              <p class="review-author">Brooklyn Simmons</p>
+             </div> 
+           </div>
+           <hr class="br-br" style="border: 1px solid #D2D3D3; margin-top: 20px; margin-left: 10px;">
+      
+          <div class="review-item"> 
+              <div class="review-rating">
+                <p class="review-date">August 2, 2023</p>
+                <span>★★★★☆</span>
+              </div>
+              <p class="review-text">Ullamcorper fermentum non cursus sit. Mollis elementum ac ullamcorper amet cum. Consectetur suspendisse massa velit, sit risus.</p>
+              <div class="rewiew_photo_name">
+                <img src="../img/jerome.png" alt="">
+                <p class="review-author">Jerome Bell</p>
+              </div>
+           </div>
+           <hr style="border: 1px solid #D2D3D3; margin-top: 50px; margin-bottom: 10px; margin-left: 10px; ">
+          <div class="review-item">
+            <div class="review-rating">
+              <p class="review-date">December 1, 2023</p>
+              <span>★★★★★</span>
+            </div>
+              <p class="review-text">Aenean integer ipsum, eget ligula pretium egestas. Viverra maecenas ut diam suspendisse proin ac, volutpat mi nunc. Varius ac lacus tristique posuere sed nunc.</p>
+              <div class="rewiew_photo_name">
+                <img class="" src="../img/cameron.png" alt="">
+                <p class="review-author">Cameron Williamson</p>
+              </div>
+              
+          </div>
+          <hr style="border: 1px solid #D2D3D3; margin-top: 50px; margin-bottom: 10px; margin-left: 10px; ">
+          
+      </div>
+      <button type="button" class="seeallbtn"><p>ყველას ნახვა</p></button>
+  </section>
+   <!-- end section review -->
+
+     <!-- start მსგავსი პროდუქტები -->
+
+     <!-- მსგავსი პროდუქტები -->
+     <section class="everything-fy-slider-section everything-fy ">
+        <div class="everything-fy-slider-div centered-div">
+        <div class="popular-products-title-div">
+          <h2 class="title">მსგავსი პროდუქტები</h2>
+          <div class="turn-products-div">
+            <span>სრულად</span>
+            <div><button class="left-btn" id="third-left">
+              <i class="fa-solid fa-less-than"></i>
+            </button>
+            <button class="right-btn" id="third-right">
+              <i class="fa-solid fa-greater-than"></i>
+            </button></div>
+          </div>
+        </div>
+        <div class="popular-products-slider">
+        <div class="all-popular-products all-popular-products-slider" id="third-products">
+          <div class="popular-products-main-div">
+            <div class="popular-products-div1">
+              <div > 
+                <div class="popular-product-photo popular-product-photo9">
+                    <img src="../img/similac gold.png" alt="">
+                  <div class="heart-icon-div">
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                </div>
+                
+                <div class="star-box"><img src="../photos/Star 2.png" alt=""> <span> 5.0</span></div>
+  
+              </div>
+             
+            </div>
+  
+            <h2>Similac</h2>
+            <h3>სიმილაკი გოლდი 1, 800 გ.</h3>
+            <div class="evaluate-star-icon">
+              <span class="discount">72.00 ₾</span>
+            </div>
+            <button class="add-to-basket-btn">კალათში დამატება</button>
+          </div>
+          <div class="popular-products-main-div">
+            <div class="popular-products-div1">
+              <div > 
+                <div class="popular-product-photo popular-product-photo9">
+                    <img src="../img/similac gold.png" alt="">
+                  <div class="heart-icon-div">
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                </div>
+                
+                <div class="star-box"><img src="../photos/Star 2.png" alt=""> <span> 5.0</span></div>
+  
+              </div>
+             
+            </div>
+  
+            <h2>Similac</h2>
+            <h3>სიმილაკი გოლდი 1, 800 გ.</h3>
+            <div class="evaluate-star-icon">
+              <span class="discount">72.00 ₾</span>
+            </div>
+            <button class="add-to-basket-btn">კალათში დამატება</button>
+          </div>
+          <div class="popular-products-main-div">
+            <div class="popular-products-div1">
+              <div > 
+                <div class="popular-product-photo popular-product-photo9">
+                    <img src="../img/similac gold.png" alt="">
+                  <div class="heart-icon-div">
+                    <i class="fa-regular fa-heart">
+                      <!-- <img src="../img/heart Button.png" alt=""> -->
+                    </i>
+                  </div>
+                </div>
+                
+                <div class="star-box"><img src="../photos/Star 2.png" alt=""> <span> 5.0</span></div>
+  
+              </div>
+             
+            </div>
+  
+            <h2>Similac</h2>
+            <h3>სიმილაკი გოლდი 1, 800 გ.</h3>
+            <div class="evaluate-star-icon">
+              <span class="discount">72.00 ₾</span>
+            </div>
+            <button class="add-to-basket-btn">კალათში დამატება</button>
+          </div>
+          <div class="popular-products-main-div">
+            <div class="popular-products-div1">
+              <div > 
+                <div class="popular-product-photo popular-product-photo9">
+                    <img src="../img/similac gold.png" alt="">
+                  <div class="heart-icon-div">
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                </div>
+                
+                <div class="star-box"><img src="../photos/Star 2.png"  alt=""> <span> 5.0</span></div>
+  
+              </div>
+             
+            </div>
+  
+            <h2>Similac</h2>
+            <h3>სიმილაკი გოლდი 1, 800 გ.</h3>
+            <div class="evaluate-star-icon">
+              <span class="discount">72.00 ₾</span>
+            </div>
+            <button class="add-to-basket-btn">კალათში დამატება</button>
+          </div>
+      </div>
+    </div>
+      </section>
+
+      <!-- end მსგავსი პროდუქტები -->
+
+     <!-- salome's sectiom -->
+    <!-- footer section -->
+    <footer id="footer" class="footer">
+      <div class="footer-container">
+        <div class="footer-section help_section toggl_hight help-about-footer">
+          <div class="line"></div>
+          <h4 class="toggle-menu ">
+            დახმარება
+            <span class="arrowf">
+              <img src="../img/chamoshla.svg" alt="arrow" />
+            </span>
+          </h4>
+          <ul class="menu">
+            <li><a href="#">მესიჯის მიწერა</a></li>
+            <li><a href="#">შეფასება</a></li>
+            <li><a href="#">ხშირად დასმული კითხვები</a></li>
+            <li><a href="#">განვადებით შეძენა</a></li>
+            <li><a href="#">მისამართები</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section terms-conditions-footer">
+          <div class="line"></div>
+          <h4 class="toggle-menu ">
+            წესები & პირობები
+            <span class="arrowf">
+              <img src="../img/chamoshla.svg" alt="arrow" />
+            </span>
+          </h4>
+          <ul class="menu">
+            <li><a href="#">ვერიფიკაცია</a></li>
+            <li><a href="#">კონფიდენციალურობა</a></li>
+            <li><a href="#">უსაფრთხოების წესები</a></li>
+            <li><a href="#">საიტის წესები</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section foter_mobel_sect about-us-footer">
+          <div class="line"></div>
+          <h4 class="toggle-menu">
+            ჩვენს შესახებ
+            <span class="arrowf">
+              <img src="../img/chamoshla.svg" alt="arrow" />
+            </span>
+          </h4>
+          <ul class="menu">
+            <li><a href="#">ვინ ვართ ჩვენ</a></li>
+            <li><a href="#">ბლოგი</a></li>
+            <li><a href="#">გაყიდე ჩვენთან</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section contact-us-footer">
+          <div class="line"></div>
+          <h4 class="toggle-menu ">
+            დაგვიკავშირდით
+            <span class="arrowf">
+              <img src="../img/chamoshla.svg" alt="arrow" />
+            </span>
+          </h4>
+          <ul class="menu">
+            <li>
+              <a href="tel:+9955550120" class="tel_mail">(406) 555-0120</a>
+            </li>
+            <li>
+              <a class="mail-footer" href="mailto:support@shopeasy.com">support@shopeasy.com</a>
+            </li>
+          </ul>
+          <div class="line"></div>
+          <div class="social-media">
+            <a href="#"><img src="../img/icon-facebook.png" alt="Facebook" /></a>
+            <a href="#"><img src="../img/icon-instagram.png" alt="Instagram" /></a>
+            <a href="#"><img src="../img/icon-linkedin.png" alt="LinkedIn" /></a>
+            <a href="#"><img src="../img/icon-youtube.png" alt="YouTube" /></a>
+          </div>
+        </div>
+        <div class="footer-section app-links">
+          <a href="#"
+            ><img class="store" src="../img/App Store.png" alt="App Store"
+          /></a>
+          <a href="#"
+            ><img class="store google-play" src="../img/Google Play.png" alt="Google Play"
+          /></a>
+        </div>
+      </div>
+    </footer>
+      <script src="../js/mobile.js"></script>
+      
+      <script src="../js/rewiusectionsliderforfood.js"></script>
+   <!-- salome's sectiom -->
+      <!-- footer section -->
+     <!-- <div id="footer">
+       
+        </div> -->
+      <!--end  salome's sectiom -->
+  
+     
+    
+    
+      <script src="../js/sale-slideer.js"></script>
+      
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+      <!-- <script src="footer.js"></script> -->
+      <script src="../js/pool_section.js"></script>
+      <script src="../js/basket.js"></script>
+      <script src="../js/review.js"></script>
+      <script src="../js/baby-care.js"></script>
+      
+
+   <!-- salome's sectiom -->
+      <!-- footer section -->
+   
+
+
+<script src="creditCard.js"></script>
+<script src="js/header-nav.js"></script>
+<script src="js/script.js"></script>
+<script src="js/mobile-burger-menu.js"></script>
+<script src="js/food-item.js"></script>
+</body>
+</html>

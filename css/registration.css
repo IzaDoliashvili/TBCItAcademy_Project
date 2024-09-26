@@ -1,0 +1,260 @@
+.center-div-top-buttons-login {
+  /* margin-bottom: 20px; */
+}
+/* autorisation */
+.authorization-container {
+  display: none;
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  width: 100%;
+  z-index: 1001;
+}
+.authorization-container-center {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.authorization-container-center h2 {
+  margin-left: 150px;
+  color: #008bff;
+}
+
+#closeButton {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #ccc;
+}
+
+#closeButton:hover {
+  color: #000;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.tab {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #9b9393;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.tab.active {
+  color: #000;
+  font-weight: bold;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.form-footer {
+  margin-top: 10px;
+}
+
+.form-footer a {
+  color: #535353;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 14px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.divider hr {
+  flex: 1;
+  border: none;
+  border-top: 1px solid #4f61c1;
+}
+
+.divider span {
+  padding: 0 20px;
+  color: black;
+  font-size: 20px;
+}
+
+.social-login {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 10px;
+  width: 100%;
+}
+
+.social-btn {
+  width: 45%;
+  padding: 20px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.facebook-btn,
+.google-btn {
+  background-color: white;
+  color: #4f61c1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+  border-radius: 5px;
+}
+
+.social-btn:hover {
+  opacity: 0.8;
+}
+
+/* registration */
+
+.registration-container {
+  display: none;
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  width: 100%;
+  z-index: 1001;
+}
+.registration-container-center {
+  width: 80%;
+  margin: 20px auto;
+}
+.registration-container .cancel-icon,
+.authorization-container .cancel-icon {
+  position: absolute;
+  top: 40px;
+  right: 100px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #008bff;
+  background: #fff;
+  border-radius: 50%;
+  padding: 5px;
+}
+.registration-headline {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.registration-container h2 {
+  text-align: center;
+  color: #007bff;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  color: #666;
+}
+
+.form-group input {
+  width: 97%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+button[type="submit"] {
+  width: 96%;
+  padding: 14px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+#pass-confirm {
+  display: flex;
+  justify-content: space-between;
+}
+#pass-confirm .form-group {
+  width: 48%;
+}
+#pass-confirm .form-group input {
+  width: 95%;
+}
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+/* Overlay background */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}

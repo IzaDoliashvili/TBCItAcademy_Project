@@ -1,0 +1,324 @@
+/* იზას ნაწილის დასაწყისი --> */
+.food-details{
+    width: 90%;
+    margin: auto;
+}
+.breadcrumb {
+    padding: 10px 30px;
+    background-color: #fff;
+    margin: 20px 0px;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    padding: 0px 5px;
+}
+
+
+
+.product-details-container {
+    display: flex;
+    padding: 20px;
+    background-color: #fff;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.product-images {
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+}
+
+.product-images .main-image {
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    margin: 20px;
+    border: 1px solid #EFEFEF;
+    border-radius: 10px;
+}
+
+.thumbnail-images {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.thumbnail-images img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 1px solid #EFEFEF;
+    border-radius: 10px;
+}
+
+.product-infos {
+    padding: 20px;
+    width: 30%;
+    margin-left: 80px;
+}
+
+.product-infos h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.rating {
+    margin-bottom: 20px;
+    color: #2D3648;
+    font-size: 16px;
+}
+.rating span{
+    color: #FFA234;
+}
+.short-descrioption{
+    font-size: 16px;
+    color: #535353;
+
+}
+.short-descrioption p{
+    margin-top: 10px;
+}
+
+
+
+
+.product-buy-container {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buy-info {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+}
+
+.product-price {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.quantity-selector {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    
+}
+
+.quantity-selector label {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.quantity-buttons {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #363939;
+    
+}
+
+.quantity-buttons button {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    background-color: white;
+    
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+.quantity-buttons input {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #ddd;
+    
+}
+
+.shop-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.shop-buttons i{
+    padding: 10px 16px;
+    background: #E6F3FF;
+    color: #007bff;
+    border-radius: 6px;
+
+}
+
+.add-to-cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 32px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    width: 80%;
+}
+
+.add-to-cart i {
+    margin-right: 10px;
+}
+
+.add-to-cart:hover {
+    background-color: #0056b3;
+}
+
+.description{
+    width: 70%;
+}
+
+.product-description {
+    width: 90%;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    margin: 20px 20px 20px 50px;
+    max-width: 1200px;
+}
+
+.product-description h2 {
+    font-size: 22px;
+    margin: 10px 0px;
+}
+
+.product-description p{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 22px;
+    margin-top: 30px;
+}
+.product-description span{
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.product-description ul{
+    font-size: 18px;
+    line-height: 22px;
+    margin: 30px 0px;
+}
+#strong-p{
+    margin-top: 5px;
+    margin-bottom: 15px;
+
+}
+.hidden-span{
+    display: none;
+}
+@media (max-width: 1100px){
+    .breadcrumb{
+        display: none;
+    }
+    .product-details-container{
+        flex-direction: column;
+        align-items: center;
+        
+
+    } 
+    .product-images{
+        flex-direction: column-reverse;
+        width: 100%;
+        margin: auto;
+    }
+    .thumbnail-images {
+        display: flex;
+        gap: 5px;
+        flex-direction: row;
+    }
+    .product-infos {
+        margin-left: 0px;
+        padding: 0px;
+        width: 100%;
+
+    }  
+    .short-descrioption {
+        display: none;
+    }
+   
+    .product-infos h1 {
+        font-size: 12px;
+    }
+    .product-buy-container{
+        width: 100%;
+    }
+    .product-price , .quantity-selector{
+        display: none;
+    }
+    .add-to-cart {
+        width: 50%;
+    }
+    .shop-buttons i {
+        width: 45%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        column-gap: 10px;
+    }
+    .description {
+        width: 100%;
+    }
+    .product-description{
+        margin: 0px auto;
+        padding: 20px 0px;
+    }
+    .product-description div{
+        display: none;
+    }
+    .product-description h2{
+        color:  #363939;
+        font-size: 12px;
+
+    }
+    .product-description p {
+        font-size: 12px;
+        font-weight: normal;
+        color: #464646;
+        line-height: 22px;
+        margin-top: 10px;
+    }
+    .product-description span {
+        font-size: 12px;
+        color: #797A7B;
+        line-height: 15px;
+
+    }
+    .buy-info{
+        box-shadow: none;
+        padding: 0px;
+    }
+    .hidden-span{
+        display: block;
+        font-size: 14px;
+    }
+    .product-details-container {
+        padding: 20px 0px;
+    }
+}
+
+/*  იზას ნაწილის დასასრული */

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/baby-food.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/baby-care.css">
+    <link rel="stylesheet" href="../footer.css">
+    
+            
+        
+</head>
+
+<body>
+    <header>
+        <div class="center-div">
+            <div class="center-div-top">
+                <div class="logo">
+                  <a href="../index.html">
+                    <img src="../Image/ShopEasy.png" alt="">
+                  </a>  
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="ძიება">
+                    <img src="../Image/Icon Right.png" alt="">
+                </div>
+                <div class="center-div-top-buttons">
+                    <div class="center-div-top-buttons-icons">
+                      <div  id="basket-icon"                                                                                                                                                                                                      >
+                        <img src="../Image/icon-shopping-cart.png" alt="">
+                        <div class="red-dot"></div>
+                      </div>
+                       
+                    </div>
+                    <div class="center-div-top-buttons-icons">
+                      <a href="">
+                        <img src="../Image/Frame 1.png" alt="">
+                      </a>
+                        
+                    </div>
+                    <div class="center-div-top-buttons-login">
+                      <button id="loginButton">შესვლა</button>
+                    </div>
+                    
+                </div>
+                <div class="hidden-button">
+                    <a href="javascript:void(0)">
+                        <img src="../Image/icon-align-justify.png" alt="Menu">
+                    </a>
+                </div>
+                <div class="menu-container" id="menuContainer">
+                    <div class="menu-header">
+                        <!-- <span>Menu</span> -->
+                        <button id="closeButton">&times;</button>
+                    </div>
+                    <ul id="menuList"></ul>
+                </div>
+           </div>
+           <div class="center-div-lower">
+            <div class="center-div-lower-main">
+                <div class="burger-menu" id="burger-menu">
+                    <div>
+                        <img src="../Image/icon-align-justify.png" alt="">
+                    </div>
+                    <span>ყველა კატეგორია</span>
+                </div>
+                <div class="carousel-wrap">
+                    <div class="carousel" id="carousel">
+                        <div class="carousel-slide" >
+                            <div class="carousel-item"><a href="">ფასდაკლება</a></div>
+                            <div class="carousel-item"><a href="">ტექნიკა</a></div>
+                            <div class="carousel-item"><a href="../html/baby-care.html">ბავშვის მოვლა</a></div>
+                            <div class="carousel-item"><a href="">სახლი & მოვლა</a></div>
+                            <div class="carousel-item"><a href="">თავის მოვლა</a></div>
+                            <div class="carousel-item"><a href="">სათამაშოები</a></div>
+                            <div class="carousel-item"><a href="">ფიტნესი</a></div>
+                        </div>
+                        <div class="carousel-slide" >
+                            <div class="carousel-item"><a href="">ბარი & სხვა</a></div>
+                            <div class="carousel-item" id="xx"><a href="">წვეულება</a></div>
+                            <div class="carousel-item"><a href="">წიგნები</a></div>
+                            <div class="carousel-item"><a href="">ცხოველების მოვლა</a></div>
+                            <div class="carousel-item"><a href="">დასვენება & მოგზაურობა</a></div>
+                            <div class="carousel-item"><a href="">ჯანმრთელობა</a></div>
+                            <div class="carousel-item" id="xx"><a href="">ეზოს მოვლა</a></div>
+                        </div>
+                    </div>
+                    <button class="carousel-nav prev" onclick="prevSlide()">&#10094;</button>
+                    <button class="carousel-nav next" onclick="nextSlide()">&#10095;</button>
+                </div>
+                
+            </div>
+        </div> 
+    </header>
+    <div class="category-section" id="category-section">
+        <div class="cancel-icon"><img src="../Image/icon-x.png" alt=""></div>
+    <div class="scrollable-content">
+        
+    </div>
+    </div>
+     <!-- რუსოს ნაწილი დასაწყისი  -->
+     <div class="whole-content">
+        <div class="all-category">
+     <div class="all-categ-1st-div">
+     <span >ყველა კატეგორია</span><span>></span><span >ბავშვის მოვლა</span><span>></span> <span >ბავშვის კვება</span></div>
+    <div class="kid-and-cards">
+     <div class="kid-categories">
+        <h2>ბავშვის მოვლა</h2>
+        <ul>
+            <li><a href="#" class="ruso"> ადაპტირებული რძე </a></li>
+            <li><a href="#"> ფაფა </a></li>
+            <li><a href="#">  ორცხობილა</a></li>
+            <li><a href="#"> იოგურტი და პუდინგი </a></li>
+            <li><a href="#"> ჩაი</a></li>
+            <li><a href="#" class="see-all"> ყველას ნახვა </a></li>
+        </ul>
+     </div>
+     <div class="kid-cards">
+
+        <div class="kid-card">
+        <p>ადაპტირებული რძე</p>
+        <img src="../photos/რძე.png" alt="">
+    </div>
+    <div class="kid-card">
+        <p> ფაფა</p>
+        <img id="second-img" src="../photos/ფაფა.png" alt="">
+
+    </div>
+    <div class="kid-card">
+        <p>ორცხობილა</p>
+        <img src="../photos/ორცხობილა.png" alt="">
+
+    </div>
+
+
+        <div class="kid-card">
+        <p>იოგურტი და პუდინგი  </p>
+        <img id="fourth-img" src="../photos/იოგურტი.png" alt="">
+
+    </div>
+    <div class="kid-card">
+        <p>ჩაი</p>
+        <img id="fifth-img" src="../photos/ჩაი.png" alt="">
+
+    </div>
+</div>
+</div>
+    </div>
+    </div>
+    <!-- რუსოს ნაწილი დასასრული -->
+    <!-- იზას ნაწილის დასაწყისი -->
+
+<section class="baby-food-filter">
+    <div class="baby-food-container">
+        <div id="filter-icon" class="filter-icon">
+            <i class="fas fa-filter"></i>
+        </div>
+        
+        <div class="filter-section">
+            <div class="filter-group">
+                <h2>ფასი</h2>
+                <div class="price-filter-flex">
+                    <label>
+                        <input type="number" id="minPrice" class="filter price-input" placeholder="მინ.">
+                    </label>
+                    <label>
+                        <input type="number" id="maxPrice" class="filter price-input" placeholder="მაქს.">
+                    </label>
+                    <button id="searchButton" class="filter-button">ძიება</button>
+                </div>
+            </div>
+            <div class="filter-group">
+                <h2>ბრენდი</h2>
+                <label>
+                    <input type="checkbox" class="filter brand" data-filter="HIPP"> HIPP
+                </label>
+                <label>
+                    <input type="checkbox" class="filter brand" data-filter="BabyBio"> BabyBio
+                </label>
+                <label>
+                    <input type="checkbox" class="filter brand" data-filter="Plasmon"> Plasmon
+                </label>
+                <label>
+                    <input type="checkbox" class="filter brand" data-filter="Humana"> Humana
+                </label>
+                <label>
+                    <input type="checkbox" class="filter brand" data-filter="Heinz"> Heinz
+                </label>
+                <label>
+                    <input type="checkbox" class="filter brand" data-filter="Nestle"> Nestle
+                </label>
+            </div>
+            <div class="filter-group">
+                <h2>ასაკი</h2>
+                <label>
+                    <input type="checkbox" class="filter age" data-filter="0-3 months"> 0-3 თვე
+                </label>
+                <label>
+                    <input type="checkbox" class="filter age" data-filter="3-6 months"> 3-6 თვე
+                </label>
+                <label>
+                    <input type="checkbox" class="filter age" data-filter="6-9 months"> 6-9 თვე
+                </label>
+                <label>
+                    <input type="checkbox" class="filter age" data-filter="9-12 months"> 9-12 თვე
+                </label>
+                <label>
+                    <input type="checkbox" class="filter age" data-filter="1-3 years"> 1-3 წელი
+                </label>
+                <label>
+                    <input type="checkbox" class="filter age" data-filter="3-5 years"> 3-5 წელი
+                </label>
+            </div>
+            <div class="filter-group">
+                <h2>მოცულობა</h2>
+                <label>
+                    <input type="checkbox" class="filter bulk" data-filter="15-30 g"> 15-30 მლ
+                </label>
+                <label>
+                    <input type="checkbox" class="filter bulk" data-filter="75-100 g"> 75-100 მლ
+                </label>
+                <label>
+                    <input type="checkbox" class="filter bulk" data-filter="100-300 g"> 100-300 მლ
+                </label>
+                <label>
+                    <input type="checkbox" class="filter bulk" data-filter="300-500 g"> 300-500 მლ
+                </label>
+                <label>
+                    <input type="checkbox" class="filter bulk" data-filter="500-1000 g"> 500-1000 მლ
+                </label>
+            </div>
+            <div class="filter-group">
+                <h2>რეიტინგი</h2>
+                <label>
+                    <input type="checkbox" class="filter rating" data-filter="5">
+                    <span class="stars">★★★★★</span>
+                </label>
+                <label>
+                    <input type="checkbox" class="filter rating" data-filter="4">
+                    <span class="stars">★★★★☆</span>
+                </label>
+                <label>
+                    <input type="checkbox" class="filter rating" data-filter="3">
+                    <span class="stars">★★★☆☆</span>
+                </label>
+                <label>
+                    <input type="checkbox" class="filter rating" data-filter="2">
+                    <span class="stars">★★☆☆☆</span>
+                </label>
+                <label>
+                    <input type="checkbox" class="filter rating" data-filter="1">
+                    <span class="stars">★☆☆☆☆</span>
+                </label>
+            </div>
+        </div>
+
+        <section class="baby-food-center">
+            <div class="sort-div" id="sort-div">
+                <div class="sort-header">
+                    <span>სორტირება</span>
+                    <button id="clearAll" class="clear-all">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    </button>
+                </div>
+                <div id="selected-filters"></div>
+            </div>
+            
+            <div class="baby-food-product-section">
+                <div class="baby-food-product-conteiner" id="baby-product-conteiner"></div>
+                <div class="pagination" id="pagination"></div>
+            </div>
+        </section>
+        
+    </div>
+</section>
+
+<!-- იზას ნაწილის დასასრული -->
+   <!-- salome's sectiom -->
+    <!-- footer section -->
+    <footer id="footer" class="footer">
+        <div class="footer-container">
+          <div class="footer-section help_section toggl_hight help-about-footer">
+            <div class="line"></div>
+            <h4 class="toggle-menu ">
+              დახმარება
+              <span class="arrowf">
+                <img src="../img/chamoshla.svg" alt="arrow" />
+              </span>
+            </h4>
+            <ul class="menu">
+              <li><a href="#">მესიჯის მიწერა</a></li>
+              <li><a href="#">შეფასება</a></li>
+              <li><a href="#">ხშირად დასმული კითხვები</a></li>
+              <li><a href="#">განვადებით შეძენა</a></li>
+              <li><a href="#">მისამართები</a></li>
+            </ul>
+          </div>
+  
+          <div class="footer-section terms-conditions-footer">
+            <div class="line"></div>
+            <h4 class="toggle-menu ">
+              წესები & პირობები
+              <span class="arrowf">
+                <img src="../img/chamoshla.svg" alt="arrow" />
+              </span>
+            </h4>
+            <ul class="menu">
+              <li><a href="#">ვერიფიკაცია</a></li>
+              <li><a href="#">კონფიდენციალურობა</a></li>
+              <li><a href="#">უსაფრთხოების წესები</a></li>
+              <li><a href="#">საიტის წესები</a></li>
+            </ul>
+          </div>
+  
+          <div class="footer-section foter_mobel_sect about-us-footer">
+            <div class="line"></div>
+            <h4 class="toggle-menu">
+              ჩვენს შესახებ
+              <span class="arrowf">
+                <img src="../img/chamoshla.svg" alt="arrow" />
+              </span>
+            </h4>
+            <ul class="menu">
+              <li><a href="#">ვინ ვართ ჩვენ</a></li>
+              <li><a href="#">ბლოგი</a></li>
+              <li><a href="#">გაყიდე ჩვენთან</a></li>
+            </ul>
+          </div>
+  
+          <div class="footer-section contact-us-footer">
+            <div class="line"></div>
+            <h4 class="toggle-menu ">
+              დაგვიკავშირდით
+              <span class="arrowf">
+                <img src="../img/chamoshla.svg" alt="arrow" />
+              </span>
+            </h4>
+            <ul class="menu">
+              <li>
+                <a href="tel:+9955550120" class="tel_mail">(406) 555-0120</a>
+              </li>
+              <li>
+                <a class="mail-footer" href="mailto:support@shopeasy.com">support@shopeasy.com</a>
+              </li>
+            </ul>
+            <div class="line"></div>
+            <div class="social-media">
+              <a href="#"><img src="../img/icon-facebook.png" alt="Facebook" /></a>
+              <a href="#"><img src="../img/icon-instagram.png" alt="Instagram" /></a>
+              <a href="#"><img src="../img/icon-linkedin.png" alt="LinkedIn" /></a>
+              <a href="#"><img src="../img/icon-youtube.png" alt="YouTube" /></a>
+            </div>
+          </div>
+          <div class="footer-section app-links">
+            <a href="#"
+              ><img class="store" src="../img/App Store.png" alt="App Store"
+            /></a>
+            <a href="#"
+              ><img class="store google-play" src="../img/Google Play.png" alt="Google Play"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    <script src="../js./mobile.js"></script>
+<script src="../js/baby-food.js"></script>
+<script src="../js/baby-food-mobile.js"></script>
+<script src="../js/header-nav.js"></script>
+<script src="../js/script.js"></script>
+<script src="../js/mobile-burger-menu.js"></script>
+
+</body>
+</html>
+
+
+
+
